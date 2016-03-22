@@ -26,3 +26,13 @@
 *.exe
 *.out
 *.app
+*.sdf
+*.suo
+*.user
+
+Debug/
+Release/
+*/Debug/
+*/*/Debug/
+*/Release/
+*/*/Release/
