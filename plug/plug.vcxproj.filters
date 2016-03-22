@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="business">
+      <UniqueIdentifier>{78a86275-1115-41fa-baad-cf20fffcc417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skill">
+      <UniqueIdentifier>{be3e8f2a-a544-417b-a8c4-cecc8bde0de9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="business\ui">
+      <UniqueIdentifier>{630bf874-2c06-45af-ac6f-86a0e07e4699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skill\privilege">
+      <UniqueIdentifier>{e213afec-5464-4a5d-94c2-4b037b6560df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="business\algorithm">
+      <UniqueIdentifier>{a4663ac6-76ec-45fd-99ff-9153d54a0e83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="business\ui\main_form.cpp">
+      <Filter>business\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="skill\privilege\promote_privilege.cpp">
+      <Filter>skill\privilege</Filter>
+    </ClCompile>
+    <ClCompile Include="business\algorithm\link_game.cpp">
+      <Filter>business\algorithm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="business\ui\main_form.h">
+      <Filter>business\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\privilege\promote_privilege.h">
+      <Filter>skill\privilege</Filter>
+    </ClInclude>
+    <ClInclude Include="business\algorithm\link_game_type.h">
+      <Filter>business\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="business\algorithm\link_game.h">
+      <Filter>business\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="business\ui\virtual_factory.h">
+      <Filter>business\ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
