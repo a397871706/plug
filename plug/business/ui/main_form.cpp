@@ -1,12 +1,14 @@
 #include "../../business/ui/main_form.h"
 
 #include <stdlib.h> 
+#include <Winuser.h>
 
 #include "../../third_party/nana/include/nana/gui/programming_interface.hpp"
 #include "../../third_party/nana/include/nana/gui/basis.hpp"
 #include "../../skill/privilege/promote_privilege.h"
 #include "../../business/algorithm/link_game_type.h"
 #include "../../business/algorithm/link_game.h"
+#include "../../resource.h"
 
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
@@ -71,8 +73,12 @@ MainForm::MainForm()
     start_->events().click.connect(std::bind(&MainForm::OnSingleClick, this, _1));
     start_->caption(L"单消");
 
-    icon_.reset(new nana::paint::image(L""));
-    icon(*icon_.get());
+    /*icon_.reset(new nana::paint::image(L"I:\\plug\\bin\\icon_main.ico"));
+    icon(*icon_.get());*/
+
+    /*HICON hIcon =(HICON)::LoadImage(NULL, L"I:\\plug\\bin\\favicon-20160323043854820.ico", IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+    ::SetClassLong(hWnd, GCL_HICON, static_cast<LONG>(reinterpret_cast<LONG_PTR>(hIcon)));
+    ::SetClassLong(hWnd, GCL_HICONSM, static_cast<LONG>(reinterpret_cast<LONG_PTR>(hIcon))); // 相当于WM_SETICON*/
 
     timer_.reset(new nana::timer());
     timer_->elapse(std::bind(&MainForm::OnTimer, this));
