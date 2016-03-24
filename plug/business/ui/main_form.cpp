@@ -17,6 +17,7 @@
 #include <nana/gui/widgets/slider.hpp>
 #include <nana/gui/programming_interface.hpp>
 #include <nana/gui/tooltip.hpp>
+#include <nana/threads/pool.hpp>
 
 using std::placeholders::_1;
 using std::placeholders::_2;
@@ -48,6 +49,11 @@ MainForm* MainForm::Get()
     return main_form_;
 }
 
+void MainForm::aa()
+{
+    int i = 1;
+}
+
 MainForm::MainForm()
     : nana::form(nana::API::make_center(310, 130),
     nana::appearance(true, true, false, true, true, false, true))
@@ -64,6 +70,7 @@ MainForm::MainForm()
     , slider_switch_()
     , tip_()
     , long_start_timer_()
+    , pool_(new nana::threads::pool(3))
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
@@ -127,6 +134,10 @@ MainForm::MainForm()
 
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
+
+    pool_->push([&](){
+        main_form_->aa();
+    });
 }
 
 void MainForm::RunApp()

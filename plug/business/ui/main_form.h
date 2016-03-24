@@ -20,6 +20,10 @@ class checkbox;
 class slider;
 struct arg_slider;
 class tooltip;
+namespace threads
+{
+class pool;
+}
 }
 
 class MainForm: public nana::form
@@ -54,6 +58,8 @@ private:
     void OnForegroundHwnd(HWND hWnd);
     HANDLE GetPrivilege();
 
+    static void aa();
+
     static MainForm* main_form_;
     std::unique_ptr<nana::button> start_;
     std::unique_ptr<nana::paint::image> icon_;
@@ -69,6 +75,7 @@ private:
     POINT current_pt_;
     std::unique_ptr<plug::LinkGame> link_game_;
     std::unique_ptr<nana::tooltip> tip_;
+    std::unique_ptr<nana::threads::pool> pool_;
 };
 
 
