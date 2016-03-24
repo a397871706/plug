@@ -106,8 +106,7 @@
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\bin\favicon-20160323043854820.ico" />
-    <Image Include="..\bin\icon_main.ico" />
+    <Image Include="..\bin\QQGame 001.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

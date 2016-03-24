@@ -57,10 +57,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\bin\icon_main.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="..\bin\favicon-20160323043854820.ico">
+    <Image Include="..\bin\QQGame 001.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
