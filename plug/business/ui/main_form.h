@@ -58,8 +58,6 @@ private:
     void OnForegroundHwnd(HWND hWnd);
     HANDLE GetPrivilege();
 
-    static void aa();
-
     static MainForm* main_form_;
     std::unique_ptr<nana::button> start_;
     std::unique_ptr<nana::paint::image> icon_;

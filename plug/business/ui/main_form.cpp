@@ -10,6 +10,8 @@
 #include "../../business/algorithm/link_game.h"
 #include "../../resource.h"
 
+#include "../../../base_plug/include/test.h"
+
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
 #include <nana/gui/timer.hpp>
@@ -47,11 +49,6 @@ MainForm* MainForm::Get()
         main_form_ = new MainForm();
 
     return main_form_;
-}
-
-void MainForm::aa()
-{
-    int i = 1;
 }
 
 MainForm::MainForm()
@@ -135,9 +132,8 @@ MainForm::MainForm()
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
 
-    pool_->push([&](){
-        main_form_->aa();
-    });
+    Test t(1, std::wstring(L"fff"));
+    int i = t.GetInt();
 }
 
 void MainForm::RunApp()
