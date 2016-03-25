@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plug", "plug\plug.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nana", "plug\third_party\nana\nana.vcxproj", "{95C962AB-1040-4910-AA25-3EF7EDABC44F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base_plug", "plug\base_plug\base_plug.vcxproj", "{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,12 @@ Global
 		{95C962AB-1040-4910-AA25-3EF7EDABC44F}.Release|Win32.ActiveCfg = Release|Win32
 		{95C962AB-1040-4910-AA25-3EF7EDABC44F}.Release|Win32.Build.0 = Release|Win32
 		{95C962AB-1040-4910-AA25-3EF7EDABC44F}.Release|x64.ActiveCfg = Release|Win32
+		{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}.Debug|Win32.Build.0 = Debug|Win32
+		{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}.Debug|x64.ActiveCfg = Debug|Win32
+		{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}.Release|Win32.ActiveCfg = Release|Win32
+		{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}.Release|Win32.Build.0 = Release|Win32
+		{E7B1994C-FAE7-4075-AFC2-B7F5134FA7DB}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

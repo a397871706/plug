@@ -36,3 +36,6 @@ Release/
 */*/Debug/
 */Release/
 */*/Release/
+bin/
+ipch/
+*/ipch/

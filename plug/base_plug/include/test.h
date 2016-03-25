@@ -6,7 +6,9 @@
 
 #include "macro.h"
 
-template class BASE_EXPORT  std::basic_string <wchar_t>;
+// https://support.microsoft.com/en-us/kb/168958
+
+template class BASE_EXPORT std::basic_string <wchar_t>;
 
 class BASE_EXPORT Test
 {
@@ -16,6 +18,10 @@ public:
     ~Test();
 
     int GetInt() const;
+
+    std::wstring* GetString();
+
+    void ReleaseString(std::wstring* str);
 
 private:
     int i_;

@@ -134,6 +134,8 @@ MainForm::MainForm()
 
     Test t(1, std::wstring(L"fff"));
     int i = t.GetInt();
+    std::wstring* str = t.GetString();
+    t.ReleaseString(str);
 }
 
 void MainForm::RunApp()

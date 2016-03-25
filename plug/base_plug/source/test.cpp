@@ -23,3 +23,16 @@ int Test::GetInt() const
 {
     return i_;
 }
+
+std::wstring* Test::GetString()
+{
+    std::wstring* str = new std::wstring();
+    str->assign(str_);
+    return str;
+}
+
+void Test::ReleaseString(std::wstring* str)
+{
+    if (str)
+        delete str;
+}
