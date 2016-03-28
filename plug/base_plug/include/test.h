@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "macro.h"
+#include "base_export.h"
 
 // https://support.microsoft.com/en-us/kb/168958
 
