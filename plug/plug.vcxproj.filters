@@ -32,6 +32,9 @@
     <ClCompile Include="business\algorithm\link_game.cpp">
       <Filter>business\algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="skill\privilege\system_info.cpp">
+      <Filter>skill\privilege</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
@@ -50,6 +53,9 @@
       <Filter>business\ui</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="skill\privilege\system_info.h">
+      <Filter>skill\privilege</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">

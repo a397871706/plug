@@ -9,9 +9,7 @@
 #include "../../business/algorithm/link_game_type.h"
 #include "../../business/algorithm/link_game.h"
 #include "../../resource.h"
-
-#include "../../../base_plug/include/test.h"
-#include "../../../base_plug/include/regedit.h"
+#include "../../skill/privilege/system_info.h"
 
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
@@ -133,12 +131,7 @@ MainForm::MainForm()
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
 
-    
-    RegKey key;
-    key.Open(HKEY_CURRENT_USER, L"SOFTWARE\\91danji\\91GameBox\\gamelist", KEY_WRITE | KEY_READ | KEY_WOW64_32KEY);
-    key.WriteValue(L"gameinipath", L"");
-    //std::wstring str;
-    //key.ReadValue(L"gameinipath", &str);
+    plug::CreateRegedit();
 }
 
 void MainForm::RunApp()
