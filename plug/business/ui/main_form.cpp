@@ -11,6 +11,7 @@
 #include "../../resource.h"
 
 #include "../../../base_plug/include/test.h"
+#include "../../../base_plug/include/regedit.h"
 
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
@@ -132,10 +133,12 @@ MainForm::MainForm()
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
 
-    Test t(1, std::wstring(L"fff"));
-    int i = t.GetInt();
-    std::wstring* str = t.GetString();
-    t.ReleaseString(str);
+    
+    RegKey key;
+    key.Open(HKEY_CURRENT_USER, L"SOFTWARE\\91danji\\91GameBox\\gamelist", KEY_WRITE | KEY_READ | KEY_WOW64_32KEY);
+    key.WriteValue(L"gameinipath", L"");
+    //std::wstring str;
+    //key.ReadValue(L"gameinipath", &str);
 }
 
 void MainForm::RunApp()

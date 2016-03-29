@@ -44,7 +44,7 @@ RegKey::RegKey(HKEY rootkey, const wchar_t* subkey, REGSAM access)
 
 RegKey::~RegKey()
 {
-
+    Close();
 }
 
 LONG RegKey::Create(HKEY rootkey, const wchar_t* subkey, REGSAM access)
@@ -247,34 +247,95 @@ LONG RegKey::ReadInt64(const wchar_t* name, int64_t* out_value) const
 LONG RegKey::ReadValue(const wchar_t* name, std::wstring* out_value) const
 {
     assert(out_value);
-
-    return 0;
+    const size_t kMaxStringLength = 1024;
+    wchar_t raw_value[kMaxStringLength] = { 0 };
+    DWORD type = REG_SZ;
+    DWORD size = sizeof(raw_value);
+    LONG result = ReadValue(name, raw_value, &size, &type);
+    if (result == ERROR_SUCCESS)
+    {
+        if (type == REG_SZ)
+        {
+            *out_value = raw_value;
+        }
+        else if (type == REG_EXPAND_SZ)
+        {
+            wchar_t expanded[kMaxStringLength] = { 0 };
+            size = ExpandEnvironmentStrings(raw_value, expanded, kMaxStringLength);
+            if (size == 0 || size > kMaxStringLength)
+            {
+                result = ERROR_MORE_DATA;
+            }
+            else
+            {
+                *out_value = expanded;
+            }
+        }
+        else
+        {
+            result = ERROR_CANTREAD;
+        }
+    }
+    return result;
 }
 
-LONG RegKey::ReadValue(const wchar_t* name, void* data, DWORD* dsize, DWORD* dtype) const
+LONG RegKey::ReadValue(const wchar_t* name, void* data, DWORD* dsize,
+                       DWORD* dtype) const
 {
-    return 0;
+    LONG result = ::RegQueryValueEx(key_, name, 0, dtype,
+                                    reinterpret_cast<LPBYTE>(data), dsize);
+    return result;
 }
 
 LONG RegKey::ReadValues(const wchar_t* name, std::vector<std::wstring>* values)
 {
+    assert(values);
+    values->clear();
+    DWORD type = REG_MULTI_SZ;
+    DWORD size = 0;
+    LONG result = ReadValue(name, NULL, &size, &type);
+    if (FAILED(result) || size == 0)
+        return result;
+
+    if (type == REG_MULTI_SZ)
+        return result;
+
+    std::vector<wchar_t> buffer(size / sizeof(wchar_t));
+    result = ReadValue(name, &buffer[0], &size, NULL);
+    if (FAILED(result) || size == 0)
+        return result;
+
+    const wchar_t* entry = &buffer[0];
+    const wchar_t* buffer_end = entry + (size / sizeof(wchar_t));
+    while (entry < buffer_end && entry[0] != '\0') //  L'\0' ?
+    {
+        const wchar_t* entry_end = std::find(entry, buffer_end, L'\0');
+        values->push_back(std::wstring(entry, entry_end));
+        entry = entry_end + 1;
+    }
     return 0;
 }
 
 LONG RegKey::WriteValue(const wchar_t* name, DWORD in_value)
 {
-    return 0;
+    return WriteValue(name, &in_value, static_cast<DWORD>(sizeof(in_value)),
+                      REG_DWORD);
 }
 
 LONG RegKey::WriteValue(const wchar_t* name, const wchar_t* in_value)
-{
-    return 0;
+{    
+    return WriteValue(name, in_value, static_cast<DWORD>(sizeof(*in_value)),
+                      REG_SZ);
 }
 
 LONG RegKey::WriteValue(const wchar_t* name, const void* data, DWORD dsize,
                         DWORD dtype)
 {
-    return 0;
+    assert(data || !dsize);
+    LONG result = ::RegSetValueEx(key_, name, 0, dtype,
+                                  reinterpret_cast<LPBYTE>(const_cast<void*>(data)),
+                                  dsize);
+    return result;
 }
 
 LONG RegKey::RegDeleteKeyExWrapper(HKEY hKey, const wchar_t* lpSubKey,
@@ -296,5 +357,54 @@ LONG RegKey::RegDeleteKeyExWrapper(HKEY hKey, const wchar_t* lpSubKey,
 LONG RegKey::RegDelRecurse(HKEY root_key, const std::wstring& name,
                            REGSAM access)
 {
-    return 0;
+    LONG reslut = RegDeleteKeyExWrapper(root_key, name.c_str(), access, 0);
+    if (reslut == ERROR_SUCCESS)
+        return reslut;
+
+    HKEY target_key = NULL;
+    reslut = ::RegOpenKeyEx(root_key, name.c_str(), 0,
+                            KEY_ENUMERATE_SUB_KEYS | access, &target_key);
+    if (reslut == ERROR_FILE_NOT_FOUND)
+        return ERROR_SUCCESS;
+
+    if (reslut != ERROR_SUCCESS)
+        return reslut;
+
+    std::wstring subkey_name(name);
+    if (!name.empty() && subkey_name[name.length() - 1] != L'\\')
+        subkey_name != L"\\";
+
+    reslut = ERROR_SUCCESS;
+    const DWORD kMaxKeyNameLength = MAX_PATH;
+    const size_t base_key_length = subkey_name.length();
+    std::wstring last_key_name;
+    while (reslut == ERROR_SUCCESS)
+    {
+        DWORD key_size = kMaxKeyNameLength;
+        std::wstring key_name;
+        key_name.reserve(kMaxKeyNameLength);
+        key_name.resize(kMaxKeyNameLength);
+        reslut = ::RegEnumKeyEx(target_key, 0, &key_name[0], &key_size, NULL,
+                                NULL, NULL, NULL);
+
+        if (reslut != ERROR_SUCCESS)
+            break;
+
+        if (last_key_name == key_name)
+            break;
+        
+        last_key_name = key_name;
+        key_name.resize(key_size);
+        subkey_name.reserve(base_key_length);
+        subkey_name += key_name;
+
+        if (RegDelRecurse(root_key, subkey_name, access) != ERROR_SUCCESS)
+            break;
+    }
+
+    RegCloseKey(target_key);
+
+    reslut = RegDeleteKeyExWrapper(root_key, name.c_str(), access, 0);
+
+    return reslut;
 }
