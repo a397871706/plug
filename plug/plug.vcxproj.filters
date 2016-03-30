@@ -20,6 +20,9 @@
     <Filter Include="business\algorithm">
       <UniqueIdentifier>{a4663ac6-76ec-45fd-99ff-9153d54a0e83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="skill\base">
+      <UniqueIdentifier>{037754ed-5b02-4e06-bf33-1cbdf2306c8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -32,8 +35,8 @@
     <ClCompile Include="business\algorithm\link_game.cpp">
       <Filter>business\algorithm</Filter>
     </ClCompile>
-    <ClCompile Include="skill\privilege\system_info.cpp">
-      <Filter>skill\privilege</Filter>
+    <ClCompile Include="skill\base\app_reg.cpp">
+      <Filter>skill\base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,8 +56,8 @@
       <Filter>business\ui</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="skill\privilege\system_info.h">
-      <Filter>skill\privilege</Filter>
+    <ClInclude Include="skill\base\app_reg.h">
+      <Filter>skill\base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

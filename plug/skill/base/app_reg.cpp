@@ -38,5 +38,9 @@ bool plug::SetAppReg()
     }
 
     subKey.WriteValue(applicationName, applicationNameText);
+<<<<<<< HEAD
+=======
+
+>>>>>>> f32eccd... 创建app注册表
 }
 }
