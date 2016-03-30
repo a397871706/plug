@@ -1,4 +1,4 @@
-#ifndef _LINK_GAME_TYPE_H_
+ï»¿#ifndef _LINK_GAME_TYPE_H_
 #define _LINK_GAME_TYPE_H_
 
 #include <wtypes.h>
@@ -31,7 +31,7 @@ class LinkGame
 {
 public:
     virtual ~LinkGame() { }
-    // ¶þÎ¬Êý×é
+    // äºŒç»´æ•°ç»„
     //virtual void SetBoardData(const BYTE** data, size_t x, size_t y) = 0;
     virtual void SetBoardData(BYTE (*data)[19]) = 0;
     virtual bool ClearPair() = 0;

@@ -1,4 +1,4 @@
-#ifndef _PROMOTE_PRIVILEGE_H_
+﻿#ifndef _PROMOTE_PRIVILEGE_H_
 #define _PROMOTE_PRIVILEGE_H_
 
 #include <string>

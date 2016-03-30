@@ -1,4 +1,4 @@
-#ifndef _LINK_GAME_H_
+ï»¿#ifndef _LINK_GAME_H_
 #define _LINK_GAME_H_
 
 #include <functional>
@@ -14,7 +14,7 @@ public:
     LinkGameEraser(const ClickCallback& callback);
     ~LinkGameEraser();
 
-    // ¶þÎ¬Êý×é
+    // äºŒç»´æ•°ç»„
     //virtual void SetBoardData(const BYTE** data, size_t x, size_t y) override;
     virtual void SetBoardData(BYTE(*data)[19]) override;
     virtual bool ClearPair() override;

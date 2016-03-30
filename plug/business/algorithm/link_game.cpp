@@ -1,4 +1,4 @@
-#include "link_game.h"
+﻿#include "link_game.h"
 
 plug::LinkGameEraser::LinkGameEraser(const ClickCallback& callback)
     : LinkGame()

@@ -1,4 +1,4 @@
-#ifndef _APP_REG_H_
+﻿#ifndef _APP_REG_H_
 #define _APP_REG_H_
 
 

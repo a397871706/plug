@@ -1,4 +1,4 @@
-#include "promote_privilege.h"
+﻿#include "promote_privilege.h"
 
 #include <tchar.h>
 #include <Tlhelp32.h>
