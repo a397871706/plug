@@ -9,7 +9,6 @@
 #include "../../business/algorithm/link_game_type.h"
 #include "../../business/algorithm/link_game.h"
 #include "../../resource.h"
-#include "../../skill/privilege/system_info.h"
 
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
