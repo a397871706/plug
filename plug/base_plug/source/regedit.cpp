@@ -324,7 +324,8 @@ LONG RegKey::WriteValue(const wchar_t* name, DWORD in_value)
 
 LONG RegKey::WriteValue(const wchar_t* name, const wchar_t* in_value)
 {    
-    return WriteValue(name, in_value, static_cast<DWORD>(sizeof(*in_value)),
+    return WriteValue(name, in_value, 
+                      static_cast<DWORD>(sizeof(*in_value) * (wcslen(in_value) + 1)),
                       REG_SZ);
 }
 

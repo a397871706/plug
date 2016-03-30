@@ -130,8 +130,6 @@ MainForm::MainForm()
 
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
-
-    plug::CreateRegedit();
 }
 
 void MainForm::RunApp()
@@ -156,6 +154,8 @@ void MainForm::OnSingleClick(const nana::arg_click& arg)
 
 void MainForm::OnDestory(const nana::arg_destroy& arg)
 {
+    if (tip_)
+        tip_->close();
 }
 
 void MainForm::OnReadMemoryData()

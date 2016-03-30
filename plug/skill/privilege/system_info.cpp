@@ -5,15 +5,21 @@
 namespace plug
 {
 const wchar_t* regedit_sub_key = L"SOFTWARE\\LinkPlug";
-const wchar_t* regedit_key_name = L"Version";
-
+const wchar_t* regedit_version_key_name = L"ExpireVersion";
+const wchar_t* regedit_version_value = L"1.0.1";
 
 bool CreateRegedit()
 {
     RegKey key(GetHKEY(CURRENT_USER), regedit_sub_key, KEY_SET_VALUE);
     if (key.Valid())
     {
-        key.WriteValue(regedit_key_name, L"");
+        key.CreateKey(regedit_version_key_name, KEY_SET_VALUE);
+        if (key.Valid())
+        {
+            wchar_t buffer[MAX_PATH] = { 0 };
+            ::GetModuleFileName(NULL, buffer, MAX_PATH);
+            key.WriteValue(buffer, regedit_version_value);
+        }
     }
 
     return true;
