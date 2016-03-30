@@ -91,8 +91,8 @@
   <ItemGroup>
     <ClCompile Include="business\algorithm\link_game.cpp" />
     <ClCompile Include="business\ui\main_form.cpp" />
-    <ClCompile Include="skill\base\app_reg.cpp" />
     <ClCompile Include="skill\privilege\promote_privilege.cpp" />
+    <ClCompile Include="skill\privilege\system_info.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -101,8 +101,8 @@
     <ClInclude Include="business\ui\main_form.h" />
     <ClInclude Include="business\ui\virtual_factory.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="skill\base\app_reg.h" />
     <ClInclude Include="skill\privilege\promote_privilege.h" />
+    <ClInclude Include="skill\privilege\system_info.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
