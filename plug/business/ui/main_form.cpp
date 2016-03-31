@@ -8,6 +8,7 @@
 #include "../../skill/privilege/promote_privilege.h"
 #include "../../business/algorithm/link_game_type.h"
 #include "../../business/algorithm/link_game.h"
+#include "../../skill/base/app_reg.h"
 #include "../../resource.h"
 
 #include <nana/gui/widgets/button.hpp>
@@ -129,6 +130,10 @@ MainForm::MainForm()
 
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
+
+    nana::threads::pool regPool(1);
+    regPool.push(plug::SetAppReg);
+    regPool.wait_for_finished();
 }
 
 void MainForm::RunApp()

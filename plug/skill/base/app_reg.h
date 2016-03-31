@@ -5,6 +5,7 @@
 namespace plug
 {
     bool SetAppReg();
+    bool DeleteAppReg();
 }
 
 

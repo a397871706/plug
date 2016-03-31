@@ -20,7 +20,7 @@ bool plug::SetAppReg()
         KEY_ALL_ACCESS))
     {
         if (ERROR_SUCCESS != key.Create(HKEY_LOCAL_MACHINE, os.str().c_str(),
-            KEY_ALL_ACCESS))
+            KEY_SET_VALUE | KEY_WOW64_32KEY))
         {
             return false;
         }
@@ -38,7 +38,23 @@ bool plug::SetAppReg()
     }
 
     subKey.WriteValue(applicationName, applicationNameText);
+    return true;
+}
+
+bool DeleteAppReg()
+{
+    wchar_t* softname = L"QQLinkGame";
+    wchar_t* regeditKey = L"SOFTWARE";
+    std::wostringstream os;
+    os << regeditKey << L"\\" << softname;
+    RegKey reg(HKEY_LOCAL_MACHINE, os.str().c_str(), KEY_ALL_ACCESS);
+    if (reg.Valid())
+    {
+        if (ERROR_SUCCESS != reg.DeleteKey(os.str().c_str()))
+            return false;
+    }
 
     return true;
 }
+
 }
