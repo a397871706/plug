@@ -29,6 +29,7 @@
 *.sdf
 *.suo
 *.user
+*.aps
 
 Debug/
 Release/
