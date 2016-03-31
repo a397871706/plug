@@ -31,6 +31,18 @@
     <ClInclude Include="include\base_export.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\basictypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\string16.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\build_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\string_piece.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
@@ -41,6 +53,12 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="source\regedit.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\string16.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\string_piece.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
