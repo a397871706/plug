@@ -77,13 +77,15 @@ MainForm::MainForm()
     start_.reset(new nana::button(*this, nana::rectangle(250, 10, 50, 30)));
     start_->events().click.connect(std::bind(&MainForm::OnSingleClick, this, _1));
     start_->caption(L"单消");
-    icon_.reset(new nana::paint::image(L"..\\bin\\QQGame 001.ico"));
-    nana::API::window_icon(*this, *icon_, *icon_);
-
+    //icon_.reset(new nana::paint::image(L"..\\bin\\QQGame 001.ico"));
+    //nana::API::window_icon(*this, *icon_);
+    //this->icon(*icon_.get());
     /*HICON hIcon =(HICON)::LoadImage(NULL, L"I:\\plug\\bin\\favicon-20160323043854820.ico", IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
     ::SetClassLong(hWnd, GCL_HICON, static_cast<LONG>(reinterpret_cast<LONG_PTR>(hIcon)));
     ::SetClassLong(hWnd, GCL_HICONSM, static_cast<LONG>(reinterpret_cast<LONG_PTR>(hIcon))); // 相当于WM_SETICON*/
-
+    HICON hIcon = reinterpret_cast<HICON>(::LoadImage(GetModuleHandle(NULL),
+        MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, 32, 32, 0));
+    ::SendMessage(hWnd, WM_SETICON, ICON_SMALL, reinterpret_cast<LPARAM>(hIcon));
     timer_.reset(new nana::timer());
     timer_->elapse(std::bind(&MainForm::OnTimer, this));
 
