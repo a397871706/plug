@@ -18,6 +18,7 @@
 #include <nana/gui/widgets/slider.hpp>
 #include <nana/gui/programming_interface.hpp>
 #include <nana/gui/tooltip.hpp>
+#include <nana/gui/notifier.hpp>
 #include <nana/threads/pool.hpp>
 
 using std::placeholders::_1;
@@ -66,6 +67,7 @@ MainForm::MainForm()
     , slider_switch_()
     , tip_()
     , long_start_timer_()
+    , tray_icon_()
     , pool_(new nana::threads::pool(3))
 {
     caption(L"QQ连连看外挂");
@@ -133,9 +135,18 @@ MainForm::MainForm()
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
 
+    tray_icon_.reset(new nana::notifier(*this));
+    tray_icon_->icon(L"..\\bin\\QQGame 001.ico");
+    tray_icon_->text(L"QQ连连看看外挂");
+    tray_icon_->events().dbl_click([this]()
+    {
+        ::MessageBeep(0);
+    });
+
+    /*
     nana::threads::pool regPool(1);
     regPool.push(plug::SetAppReg);
-    regPool.wait_for_finished();
+    regPool.wait_for_finished();*/
 }
 
 void MainForm::RunApp()

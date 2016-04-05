@@ -20,6 +20,7 @@ class checkbox;
 class slider;
 struct arg_slider;
 class tooltip;
+class notifier;
 namespace threads
 {
 class pool;
@@ -74,6 +75,7 @@ private:
     std::unique_ptr<plug::LinkGame> link_game_;
     std::unique_ptr<nana::tooltip> tip_;
     std::unique_ptr<nana::threads::pool> pool_;
+    std::unique_ptr<nana::notifier> tray_icon_;
 };
 
 
