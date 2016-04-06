@@ -19,6 +19,7 @@
 #include <nana/gui/programming_interface.hpp>
 #include <nana/gui/tooltip.hpp>
 #include <nana/gui/notifier.hpp>
+#include <nana/gui/widgets/menu.hpp>
 #include <nana/threads/pool.hpp>
 
 using std::placeholders::_1;
@@ -31,6 +32,17 @@ namespace
 const wchar_t* game = L"QQ游戏 - 连连看角色版";
 const int clearSecode = 1500;
 const int startSecode = 5 * 1000;
+
+void OnMenuItem(const nana::menu::item_proxy& ip)
+{
+    switch (ip.index())
+    {
+    case 1:
+        break;
+    default:
+        break;
+    }
+}
 }
 
 MainForm* MainForm::main_form_ = nullptr;
@@ -138,15 +150,24 @@ MainForm::MainForm()
     tray_icon_.reset(new nana::notifier(*this));
     tray_icon_->icon(L"..\\bin\\QQGame 001.ico");
     tray_icon_->text(L"QQ连连看看外挂");
-    tray_icon_->events().dbl_click([this]()
-    {
-        ::MessageBeep(0);
-    });
-
     /*
     nana::threads::pool regPool(1);
     regPool.push(plug::SetAppReg);
     regPool.wait_for_finished();*/
+
+    tray_icon_->events().mouse_down([this](const nana::arg_notifier& arg)
+    {
+        if (arg.left_button)
+        {
+            this->show();
+        }
+        else if (arg.right_button)
+        {
+            nana::menu tray_menu;
+            tray_menu.append(L"test", OnMenuItem);
+            tray_menu.popup(nullptr, 0, 1);
+        }
+    });
 }
 
 void MainForm::RunApp()
