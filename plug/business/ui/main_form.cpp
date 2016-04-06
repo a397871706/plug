@@ -159,13 +159,40 @@ MainForm::MainForm()
     {
         if (arg.left_button)
         {
-            this->show();
+            HWND hWnd = reinterpret_cast<HWND>(nana::API::root(this->handle()));
+            this->OnForegroundHwnd(hWnd);
         }
         else if (arg.right_button)
         {
-            nana::menu tray_menu;
-            tray_menu.append(L"test", OnMenuItem);
-            tray_menu.popup(nullptr, 0, 1);
+            nana::menu* tray_menu = new nana::menu();
+            tray_menu->append(L"test", OnMenuItem);
+            POINT pt = { 0 };            
+            ::GetCursorPos(&pt);
+            HMONITOR monitor =
+                ::MonitorFromPoint(pt, MONITOR_DEFAULTTONEAREST);
+            MONITORINFO mi = { 0 };
+            mi.cbSize = sizeof(mi);
+            POINT p = pt;
+            if (monitor && ::GetMonitorInfo(monitor, &mi))
+            {
+                if (pt.x + tray_menu->item_pixels() > mi.rcWork.right)
+                {
+                    p.x = pt.x - tray_menu->item_pixels();
+                }
+
+                if (pt.y + tray_menu->item_pixels() < mi.rcWork.bottom)
+                {
+                    p.y = pt.y - tray_menu->size() == 1 ? pt.y - 2 * tray_menu->item_pixels() : pt.y - tray_menu->size() * tray_menu->item_pixels();
+                }
+                else
+                {
+                    p.y = pt.y - tray_menu->size() == 1 ? pt.y - 2 * tray_menu->item_pixels() : pt.y - tray_menu->size() * tray_menu->item_pixels();
+                }
+                //tray_menu->popup(nullptr, pt.x, pt.y);
+                tray_menu->popup_await(nullptr, p.x, p.y);
+            }
+            
+            delete tray_menu;
         }
     });
 }
