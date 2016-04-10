@@ -10,6 +10,7 @@
 #include "../../business/algorithm/link_game.h"
 #include "../../skill/base/app_reg.h"
 #include "../../resource.h"
+#include "thumbnail_toolbars.h"
 
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
@@ -84,7 +85,7 @@ MainForm::MainForm()
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
-    HWND hWnd = reinterpret_cast<HWND>(nana::API::root(this->handle()));
+    HWND hWnd = GetHWND();
     this->events().destroy.connect(std::bind(&MainForm::OnDestory, this, _1));
     LONG style = ::GetWindowLong(hWnd, GWL_STYLE);
     ::SetWindowLong(hWnd, GWL_STYLE, style & ~WS_THICKFRAME);
@@ -159,7 +160,7 @@ MainForm::MainForm()
     {
         if (arg.left_button)
         {
-            HWND hWnd = reinterpret_cast<HWND>(nana::API::root(this->handle()));
+            HWND hWnd = GetHWND();
             this->OnForegroundHwnd(hWnd);
         }
         else if (arg.right_button)
@@ -195,6 +196,8 @@ MainForm::MainForm()
             delete tray_menu;
         }
     });
+
+    Init();
 }
 
 void MainForm::RunApp()
@@ -481,4 +484,17 @@ bool MainForm::IsSquareAllClear()
         return true;
 
     return false;
+}
+
+HWND MainForm::GetHWND()
+{
+    return reinterpret_cast<HWND>(nana::API::root(this->handle()));
+}
+
+void MainForm::Init()
+{
+    if (!thumb_)
+        thumb_.reset(new ThumbnailToolbar());
+
+    thumb_->ThumbBarAddButtons();
 }

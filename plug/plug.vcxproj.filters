@@ -38,6 +38,9 @@
     <ClCompile Include="skill\base\app_reg.cpp">
       <Filter>skill\base</Filter>
     </ClCompile>
+    <ClCompile Include="business\ui\thumbnail_toolbars.cpp">
+      <Filter>business\ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
@@ -59,6 +62,9 @@
     <ClInclude Include="skill\base\app_reg.h">
       <Filter>skill\base</Filter>
     </ClInclude>
+    <ClInclude Include="business\ui\thumbnail_toolbars.h">
+      <Filter>business\ui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">
@@ -67,6 +73,15 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\bin\QQGame 001.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\bin\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\bin\1460317111_Right.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\bin\1460317117_Left.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
