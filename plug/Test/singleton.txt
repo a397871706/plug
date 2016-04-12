@@ -1,0 +1,83 @@
+CRITICAL_SECTION cs;
+
+class ThreadSingleton
+{
+public:
+    ~ThreadSingleton()
+    {
+
+    }
+
+    static ThreadSingleton* GetInstance()
+    {
+        if (nullptr == singleton_)
+        {
+            ::Sleep(200);
+            ::EnterCriticalSection(&cs);
+            if (nullptr == singleton_)
+            {
+                singleton_ = new ThreadSingleton();
+            }
+            ::LeaveCriticalSection(&cs);
+        }
+
+        return singleton_;
+    }
+
+private:
+    ThreadSingleton()
+    {
+        int i = 0;
+        int a = 1;
+        int b = i - a;
+        int c = b;
+        int d = a;
+    }
+
+    ThreadSingleton(const ThreadSingleton& t)
+    {
+
+    }
+
+    ThreadSingleton& operator= (const ThreadSingleton& t)
+    {
+
+    }
+
+    static ThreadSingleton* singleton_;
+};
+
+ThreadSingleton* ThreadSingleton::singleton_ = nullptr;
+
+
+
+DWORD WINAPI ThreadPrc(PVOID p)
+{
+    ThreadSingleton* singleton = ThreadSingleton::GetInstance();
+    if (singleton)
+    {
+        
+    }
+    return 0;
+}
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+    ::InitializeCriticalSection(&cs);    
+
+    HANDLE thread1 = ::CreateThread(NULL, 0, ThreadPrc, NULL, 0, NULL);
+
+    auto singleton = ThreadSingleton::GetInstance();
+    if (singleton)
+    {
+
+    }
+    ::CloseHandle(thread1);
+
+
+    {
+        int* iff = IncludeStatic::INIT();
+        int o = *iff;
+    }
+}
