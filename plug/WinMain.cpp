@@ -6,11 +6,9 @@
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                     LPWSTR lpCmdLine, int nShowCmd)
 {
-    MainForm* main_form_ = MainForm::Get();
-    if (main_form_)
-        main_form_->RunApp();
-   
-    delete main_form_;
-    main_form_ = nullptr;
+    MainFormDelegate main_form_delegate;
+    main_form_delegate.BeginMainForm();
+    main_form_delegate.MessageLoop();
+    main_form_delegate.EndMainForm();
     return 0;
 }

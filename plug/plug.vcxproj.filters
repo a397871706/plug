@@ -23,6 +23,9 @@
     <Filter Include="skill\base">
       <UniqueIdentifier>{75c6789f-3e83-4809-92c6-c52b4170b9b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="business\ui\menu">
+      <UniqueIdentifier>{7421f6d9-eaa0-452e-b16a-5a684f1b9bb9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -38,8 +41,8 @@
     <ClCompile Include="skill\base\app_reg.cpp">
       <Filter>skill\base</Filter>
     </ClCompile>
-    <ClCompile Include="business\ui\thumbnail_toolbars.cpp">
-      <Filter>business\ui</Filter>
+    <ClCompile Include="business\ui\menu\tray_icon.cpp">
+      <Filter>business\ui\menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +65,8 @@
     <ClInclude Include="skill\base\app_reg.h">
       <Filter>skill\base</Filter>
     </ClInclude>
-    <ClInclude Include="business\ui\thumbnail_toolbars.h">
-      <Filter>business\ui</Filter>
+    <ClInclude Include="business\ui\menu\tray_icon.h">
+      <Filter>business\ui\menu</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,6 @@
 #include "../../business/algorithm/link_game.h"
 #include "../../skill/base/app_reg.h"
 #include "../../resource.h"
-#include "thumbnail_toolbars.h"
 
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
@@ -19,8 +18,6 @@
 #include <nana/gui/widgets/slider.hpp>
 #include <nana/gui/programming_interface.hpp>
 #include <nana/gui/tooltip.hpp>
-#include <nana/gui/notifier.hpp>
-#include <nana/gui/widgets/menu.hpp>
 #include <nana/threads/pool.hpp>
 
 using std::placeholders::_1;
@@ -33,35 +30,10 @@ namespace
 const wchar_t* game = L"QQ游戏 - 连连看角色版";
 const int clearSecode = 1500;
 const int startSecode = 5 * 1000;
-
-void OnMenuItem(const nana::menu::item_proxy& ip)
-{
-    switch (ip.index())
-    {
-    case 1:
-        break;
-    default:
-        break;
-    }
 }
-}
-
-MainForm* MainForm::main_form_ = nullptr;
 
 MainForm::~MainForm()
 {
-    if (main_form_)
-    {
-        main_form_ = nullptr;
-    }
-}
-
-MainForm* MainForm::Get()
-{
-    if (!main_form_)
-        main_form_ = new MainForm();
-
-    return main_form_;
 }
 
 MainForm::MainForm()
@@ -80,8 +52,7 @@ MainForm::MainForm()
     , slider_switch_()
     , tip_()
     , long_start_timer_()
-    , tray_icon_()
-    , pool_(new nana::threads::pool(3))
+    , pool_(new nana::threads::pool(1))
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
@@ -147,66 +118,10 @@ MainForm::MainForm()
 
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
-
-    tray_icon_.reset(new nana::notifier(*this));
-    tray_icon_->icon(L"..\\bin\\QQGame 001.ico");
-    tray_icon_->text(L"QQ连连看看外挂");
     /*
     nana::threads::pool regPool(1);
     regPool.push(plug::SetAppReg);
     regPool.wait_for_finished();*/
-
-    tray_icon_->events().mouse_down([this](const nana::arg_notifier& arg)
-    {
-        if (arg.left_button)
-        {
-            HWND hWnd = GetHWND();
-            this->OnForegroundHwnd(hWnd);
-        }
-        else if (arg.right_button)
-        {
-            nana::menu* tray_menu = new nana::menu();
-            tray_menu->append(L"test", OnMenuItem);
-            POINT pt = { 0 };            
-            ::GetCursorPos(&pt);
-            HMONITOR monitor =
-                ::MonitorFromPoint(pt, MONITOR_DEFAULTTONEAREST);
-            MONITORINFO mi = { 0 };
-            mi.cbSize = sizeof(mi);
-            POINT p = pt;
-            if (monitor && ::GetMonitorInfo(monitor, &mi))
-            {
-                if (pt.x + tray_menu->item_pixels() > mi.rcWork.right)
-                {
-                    p.x = pt.x - tray_menu->item_pixels();
-                }
-
-                if (pt.y + tray_menu->item_pixels() < mi.rcWork.bottom)
-                {
-                    p.y = pt.y - tray_menu->size() == 1 ? pt.y - 2 * tray_menu->item_pixels() : pt.y - tray_menu->size() * tray_menu->item_pixels();
-                }
-                else
-                {
-                    p.y = pt.y - tray_menu->size() == 1 ? pt.y - 2 * tray_menu->item_pixels() : pt.y - tray_menu->size() * tray_menu->item_pixels();
-                }
-                //tray_menu->popup(nullptr, pt.x, pt.y);
-                tray_menu->popup_await(nullptr, p.x, p.y);
-            }
-            
-            delete tray_menu;
-        }
-    });
-
-    Init();
-}
-
-void MainForm::RunApp()
-{
-    if (main_form_)
-    {
-        main_form_->show();
-        wait_for_this();
-    }
 }
 
 void MainForm::OnSingleClick(const nana::arg_click& arg)
@@ -491,10 +406,53 @@ HWND MainForm::GetHWND()
     return reinterpret_cast<HWND>(nana::API::root(this->handle()));
 }
 
-void MainForm::Init()
+void MainForm::wait_for_this()
 {
-    if (!thumb_)
-        thumb_.reset(new ThumbnailToolbar());
-
-    thumb_->ThumbBarAddButtons();
+    nana::form::wait_for_this();
 }
+
+MainFormDelegate::MainFormDelegate()
+{
+
+}
+
+MainFormDelegate::~MainFormDelegate()
+{
+
+}
+
+MainForm* MainFormDelegate::Get()
+{
+    if (!main_form_)
+    {
+        main_form_ = new MainForm();
+    }
+    
+    return main_form_;
+}
+
+void MainFormDelegate::BeginMainForm()
+{
+
+}
+
+void MainFormDelegate::EndMainForm()
+{
+    if (main_form_)
+    {
+        delete main_form_;
+        main_form_ = nullptr;
+    }
+}
+
+void MainFormDelegate::MessageLoop()
+{
+    MainForm* main_form = MainFormDelegate::Get();
+    if (main_form)
+    {
+        main_form->show();
+        main_form->wait_for_this();
+    }
+}
+
+MainForm* MainFormDelegate::main_form_ = nullptr;

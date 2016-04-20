@@ -11,8 +11,6 @@ namespace plug
 class LinkGame;
 }
 
-class ThumbnailToolbar;
-
 namespace nana
 {
 class button;
@@ -22,7 +20,6 @@ class checkbox;
 class slider;
 struct arg_slider;
 class tooltip;
-class notifier;
 
 namespace threads
 {
@@ -30,20 +27,39 @@ class pool;
 }
 }
 
+class MainForm;
+
+class MainFormDelegate
+{
+public:
+    MainFormDelegate();
+    ~MainFormDelegate();
+
+    static MainForm* Get();
+    void BeginMainForm();
+    void EndMainForm();
+    void MessageLoop();
+
+private:
+    static MainForm* main_form_;
+};
+
+
 class MainForm: public nana::form
 {
 public:    
     virtual ~MainForm();
 
-    static MainForm*  Get();
     HWND GetHWND();
 
-    void Init();
-
-    void RunApp();
+protected:
+    void wait_for_this();
 
 private:
+    friend class MainFormDelegate;
+
     MainForm();
+
     void OnSingleClick(const nana::arg_click& arg);
     void OnReadMemoryData();
     void OnDestory(const nana::arg_destroy& arg);
@@ -65,7 +81,6 @@ private:
     void OnForegroundHwnd(HWND hWnd);
     HANDLE GetPrivilege();
 
-    static MainForm* main_form_;
     std::unique_ptr<nana::button> start_;
     std::unique_ptr<nana::paint::image> icon_;
     std::unique_ptr<nana::timer> timer_;
@@ -81,8 +96,6 @@ private:
     std::unique_ptr<plug::LinkGame> link_game_;
     std::unique_ptr<nana::tooltip> tip_;
     std::unique_ptr<nana::threads::pool> pool_;
-    std::unique_ptr<nana::notifier> tray_icon_;
-    std::unique_ptr<ThumbnailToolbar> thumb_;
 };
 
 
