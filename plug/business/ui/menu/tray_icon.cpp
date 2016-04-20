@@ -119,8 +119,8 @@ bool TrayIcon::ThumbBarAddButtons()
 
     ptbl->HrInit();
 
-    //    hr = ptbl->ThumbBarAddButtons(MainForm::Get()->GetHWND(), ARRAYSIZE(thmb),
-    //thmb);
+    hr = ptbl->ThumbBarAddButtons(MainFormDelegate::Get()->GetHWND(), ARRAYSIZE(thmb),
+                                  thmb);
     ptbl->Release();
     return SUCCEEDED(hr);
 }
@@ -143,9 +143,9 @@ bool TrayIcon::ThumbBarUpdateButtons()
 
 
     HRESULT hr = S_OK;
-    //if (taskbar_)
-    //hr = taskbar_->ThumbBarUpdateButtons(MainForm::Get()->GetHWND(), 
-    //ARRAYSIZE(thmb), thmb);
+    if (taskbar_)
+        hr = taskbar_->ThumbBarUpdateButtons(MainFormDelegate::Get()->GetHWND(),
+                                             ARRAYSIZE(thmb), thmb);
     return SUCCEEDED(hr);
 }
 
