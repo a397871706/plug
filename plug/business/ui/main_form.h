@@ -28,6 +28,7 @@ class pool;
 }
 
 class MainForm;
+class TrayIcon;
 
 class MainFormDelegate
 {
@@ -82,7 +83,6 @@ private:
     HANDLE GetPrivilege();
 
     std::unique_ptr<nana::button> start_;
-    std::unique_ptr<nana::paint::image> icon_;
     std::unique_ptr<nana::timer> timer_;
     std::unique_ptr<nana::timer> start_timer_;
     std::unique_ptr<nana::timer> long_start_timer_;
@@ -92,10 +92,11 @@ private:
     std::unique_ptr<nana::slider> slider_;
     std::unique_ptr<nana::checkbox> slider_switch_;
     std::unique_ptr<nana::checkbox> moust_top_;
-    POINT current_pt_;
     std::unique_ptr<plug::LinkGame> link_game_;
     std::unique_ptr<nana::tooltip> tip_;
     std::unique_ptr<nana::threads::pool> pool_;
+    std::unique_ptr<TrayIcon> trayicon_;
+    POINT current_pt_;
 };
 
 

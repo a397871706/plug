@@ -17,6 +17,7 @@ public:
     TrayIcon();
     ~TrayIcon();
 
+    void SetIcon();
     void AddTrayIcon();
     bool ThumbBarAddButtons();
     bool ThumbBarUpdateButtons();

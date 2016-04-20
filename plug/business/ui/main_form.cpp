@@ -3,14 +3,6 @@
 #include <stdlib.h> 
 #include <Winuser.h>
 
-#include "../../third_party/nana/include/nana/gui/programming_interface.hpp"
-#include "../../third_party/nana/include/nana/gui/basis.hpp"
-#include "../../skill/privilege/promote_privilege.h"
-#include "../../business/algorithm/link_game_type.h"
-#include "../../business/algorithm/link_game.h"
-#include "../../skill/base/app_reg.h"
-#include "../../resource.h"
-
 #include <nana/gui/widgets/button.hpp>
 #include <nana/paint/image.hpp>
 #include <nana/gui/timer.hpp>
@@ -19,6 +11,15 @@
 #include <nana/gui/programming_interface.hpp>
 #include <nana/gui/tooltip.hpp>
 #include <nana/threads/pool.hpp>
+
+#include "../../third_party/nana/include/nana/gui/programming_interface.hpp"
+#include "../../third_party/nana/include/nana/gui/basis.hpp"
+#include "../../skill/privilege/promote_privilege.h"
+#include "../../business/algorithm/link_game_type.h"
+#include "../../business/algorithm/link_game.h"
+#include "../../skill/base/app_reg.h"
+#include "../../resource.h"
+#include "./menu/tray_icon.h"
 
 using std::placeholders::_1;
 using std::placeholders::_2;
@@ -42,7 +43,6 @@ MainForm::MainForm()
     , start_()
     , current_pt_()
     , link_game_()
-    , icon_()
     , timer_()
     , auto_wait_for_()
     , auto_start_()
@@ -53,6 +53,7 @@ MainForm::MainForm()
     , tip_()
     , long_start_timer_()
     , pool_(new nana::threads::pool(1))
+    , trayicon_()
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
@@ -63,15 +64,6 @@ MainForm::MainForm()
     start_.reset(new nana::button(*this, nana::rectangle(250, 10, 50, 30)));
     start_->events().click.connect(std::bind(&MainForm::OnSingleClick, this, _1));
     start_->caption(L"单消");
-    //icon_.reset(new nana::paint::image(L"..\\bin\\QQGame 001.ico"));
-    //nana::API::window_icon(*this, *icon_);
-    //this->icon(*icon_.get());
-    /*HICON hIcon =(HICON)::LoadImage(NULL, L"I:\\plug\\bin\\favicon-20160323043854820.ico", IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-    ::SetClassLong(hWnd, GCL_HICON, static_cast<LONG>(reinterpret_cast<LONG_PTR>(hIcon)));
-    ::SetClassLong(hWnd, GCL_HICONSM, static_cast<LONG>(reinterpret_cast<LONG_PTR>(hIcon))); // 相当于WM_SETICON*/
-    HICON hIcon = reinterpret_cast<HICON>(::LoadImage(GetModuleHandle(NULL),
-        MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, 32, 32, 0));
-    ::SendMessage(hWnd, WM_SETICON, ICON_SMALL, reinterpret_cast<LPARAM>(hIcon));
     timer_.reset(new nana::timer());
     timer_->elapse(std::bind(&MainForm::OnTimer, this));
 
