@@ -692,6 +692,7 @@ namespace detail
 		case WM_MOUSELEAVE:
 		case WM_MOUSEWHEEL:	//The WM_MOUSELAST may not include the WM_MOUSEWHEEL/WM_MOUSEHWHEEL when the version of SDK is low.
 		case WM_MOUSEHWHEEL:
+        case WM_COMMAND:
 			return false;
 		default:
 			if((WM_MOUSEFIRST <= msg && msg <= WM_MOUSELAST) || (WM_KEYFIRST <= msg && msg <= WM_KEYLAST))
@@ -1511,6 +1512,15 @@ namespace detail
 					def_window_proc = true;
 				}
 				break;
+            case WM_COMMAND:
+            {
+                arg_command arg;
+                arg.window_handle = reinterpret_cast<window>(msgwnd);
+                arg.hwparam = HIWORD(wParam);
+                arg.lwparam = LOWORD(wParam);
+                brock.emit(event_code::command, msgwnd, arg, true, &context);
+                break;
+            }
 			default:
 				def_window_proc = true;
 			}

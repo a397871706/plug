@@ -431,6 +431,16 @@ namespace nana
 						evts_ptr->destroy.emit(*arg);
 				}
 				break;
+            case event_code::command:
+            {
+                if (!draw_only)
+                {
+                    auto arg = dynamic_cast<const arg_command*>(&event_arg);
+                    if (arg)
+                        evts_ptr->command.emit(*arg);
+                }
+                break;
+            }
 			default:
 				throw std::runtime_error("Invalid event code");
 			}
