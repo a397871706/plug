@@ -110,6 +110,9 @@ MainForm::MainForm()
 
     link_game_.reset(new plug::LinkGameEraser(
         std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
+
+    events().command.connect(std::bind(&MainForm::OnCommand, this, _1));
+
     /*
     nana::threads::pool regPool(1);
     regPool.push(plug::SetAppReg);
@@ -401,6 +404,16 @@ HWND MainForm::GetHWND()
 void MainForm::wait_for_this()
 {
     nana::form::wait_for_this();
+}
+
+void MainForm::OnCommand(const nana::arg_command& arg)
+{
+
+}
+
+void MainForm::ForegroundHwnd()
+{
+    OnForegroundHwnd(GetHWND());
 }
 
 MainFormDelegate::MainFormDelegate()

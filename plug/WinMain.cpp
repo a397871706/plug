@@ -6,9 +6,9 @@
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                     LPWSTR lpCmdLine, int nShowCmd)
 {
-    MainFormDelegate main_form_delegate;
+/*    MainFormDelegate main_form_delegate;
     main_form_delegate.BeginMainForm();
     main_form_delegate.MessageLoop();
-    main_form_delegate.EndMainForm();
+    main_form_delegate.EndMainForm();*/
     return 0;
 }

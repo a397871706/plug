@@ -29,6 +29,7 @@ TrayIcon::TrayIcon()
     , taskbar_()
 {
     ::CoInitialize(NULL);
+    // registerwindowmessage
 }
 
 TrayIcon::~TrayIcon()
@@ -51,6 +52,11 @@ void TrayIcon::AddTrayIcon()
 
 void TrayIcon::OnTrayIconNotify(const nana::arg_notifier& arg)
 {
+    if (arg.left_button)
+    {
+        MainFormDelegate::Get()->ForegroundHwnd();
+    }
+
     /*tray_icon_->events().mouse_down([this](const nana::arg_notifier& arg)
     {
         if (arg.left_button)

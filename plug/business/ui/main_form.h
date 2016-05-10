@@ -36,28 +36,23 @@ public:
     MainFormDelegate();
     ~MainFormDelegate();
 
-    static MainForm* Get();
-    void BeginMainForm();
-    void EndMainForm();
-    void MessageLoop();
-
 private:
-    static MainForm* main_form_;
 };
-
 
 class MainForm: public nana::form
 {
-public:    
+public:
     virtual ~MainForm();
 
     HWND GetHWND();
+    void ForegroundHwnd();
 
 protected:
     void wait_for_this();
 
 private:
     friend class MainFormDelegate;
+    friend class MainFormMessageLoop;
 
     MainForm();
 
@@ -78,6 +73,8 @@ private:
     void OnStopTimerProcess();
     bool IsSquareAllClear();
     void OnLongStart();
+
+    void OnCommand(const nana::arg_command& arg);
 
     void OnForegroundHwnd(HWND hWnd);
     HANDLE GetPrivilege();

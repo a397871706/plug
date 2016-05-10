@@ -92,6 +92,7 @@
   <ItemGroup>
     <ClCompile Include="business\algorithm\link_game.cpp" />
     <ClCompile Include="business\ui\main_form.cpp" />
+    <ClCompile Include="business\ui\main_form_messageloop.cpp" />
     <ClCompile Include="business\ui\menu\tray_icon.cpp" />
     <ClCompile Include="skill\base\app_reg.cpp" />
     <ClCompile Include="skill\privilege\promote_privilege.cpp" />
@@ -101,6 +102,7 @@
     <ClInclude Include="business\algorithm\link_game.h" />
     <ClInclude Include="business\algorithm\link_game_type.h" />
     <ClInclude Include="business\ui\main_form.h" />
+    <ClInclude Include="business\ui\main_form_messageloop.h" />
     <ClInclude Include="business\ui\menu\tray_icon.h" />
     <ClInclude Include="business\ui\virtual_factory.h" />
     <ClInclude Include="resource.h" />

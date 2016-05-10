@@ -44,6 +44,9 @@
     <ClCompile Include="business\ui\menu\tray_icon.cpp">
       <Filter>business\ui\menu</Filter>
     </ClCompile>
+    <ClCompile Include="business\ui\main_form_messageloop.cpp">
+      <Filter>business\ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
@@ -67,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="business\ui\menu\tray_icon.h">
       <Filter>business\ui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="business\ui\main_form_messageloop.h">
+      <Filter>business\ui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
