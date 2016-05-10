@@ -416,7 +416,20 @@ void MainForm::ForegroundHwnd()
     OnForegroundHwnd(GetHWND());
 }
 
+void MainForm::Init()
+{
+    if (!trayicon_)
+    {
+        trayicon_.reset(new TrayIcon());
+        trayicon_->SetIcon();
+        trayicon_->AddTrayIcon();
+    }
+}
+
+MainFormDelegate* MainFormDelegate::delegate_ = nullptr;
+
 MainFormDelegate::MainFormDelegate()
+    : mainform_(new MainForm())
 {
 
 }
@@ -426,38 +439,41 @@ MainFormDelegate::~MainFormDelegate()
 
 }
 
-MainForm* MainFormDelegate::Get()
+MainFormDelegate* MainFormDelegate::Get()
 {
-    if (!main_form_)
-    {
-        main_form_ = new MainForm();
-    }
-    
-    return main_form_;
+    if (!delegate_)
+        delegate_ = new MainFormDelegate();
+
+    return delegate_;
 }
 
-void MainFormDelegate::BeginMainForm()
+void MainFormDelegate::Release()
 {
 
-}
-
-void MainFormDelegate::EndMainForm()
-{
-    if (main_form_)
-    {
-        delete main_form_;
-        main_form_ = nullptr;
-    }
 }
 
 void MainFormDelegate::MessageLoop()
 {
-    MainForm* main_form = MainFormDelegate::Get();
-    if (main_form)
-    {
-        main_form->show();
-        main_form->wait_for_this();
-    }
+    mainform_->show();
+    mainform_->wait_for_this();
 }
 
-MainForm* MainFormDelegate::main_form_ = nullptr;
+HWND MainFormDelegate::GetHWND()
+{
+    return mainform_->GetHWND();
+}
+
+void MainFormDelegate::ForegroundHwnd()
+{
+    mainform_->ForegroundHwnd();
+}
+
+nana::window MainFormDelegate::GetHandle()
+{
+    return mainform_->handle();
+}
+
+void MainFormDelegate::Init()
+{
+    mainform_->Init();
+}

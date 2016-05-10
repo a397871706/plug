@@ -2,7 +2,7 @@
 #include "main_form.h"
 
 MainFormMessageLoop::MainFormMessageLoop()
-    : main_form_(new MainForm())
+    : delegate_()
 {
 
 }
@@ -14,19 +14,22 @@ MainFormMessageLoop::~MainFormMessageLoop()
 
 void MainFormMessageLoop::BeginMainForm()
 {
-
+    delegate_ = MainFormDelegate::Get();
+    delegate_->Init();
 }
 
 void MainFormMessageLoop::EndMainForm()
 {
-
+    if (delegate_)
+    {
+        delegate_->Release();
+        delete delegate_;
+        delegate_ = nullptr;
+    }
 }
 
 void MainFormMessageLoop::MessageLoop()
 {
-    if (main_form_)
-    {
-        main_form_->show();
-        main_form_->wait_for_this();
-    }
+    if (delegate_)
+        delegate_->MessageLoop();
 }

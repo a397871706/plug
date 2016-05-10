@@ -11,6 +11,8 @@ struct arg_notifier;
 
 struct ITaskbarList4;
 
+class MainFormDelegate;
+
 class TrayIcon
 {
 public:
@@ -27,7 +29,7 @@ private:
 
     std::unique_ptr<nana::notifier> tray_icon_;
     std::shared_ptr<ITaskbarList4> taskbar_;
-    
+    MainFormDelegate* delegate_;
 };
 
 #endif

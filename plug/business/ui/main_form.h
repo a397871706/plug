@@ -33,28 +33,40 @@ class TrayIcon;
 class MainFormDelegate
 {
 public:
-    MainFormDelegate();
     ~MainFormDelegate();
 
+    static MainFormDelegate* Get();
+    void Release();
+    void MessageLoop();
+
+    void Init();
+    HWND GetHWND();
+    void ForegroundHwnd();
+    nana::window GetHandle();
+
 private:
+    MainFormDelegate();
+
+    static MainFormDelegate* delegate_;
+    std::shared_ptr<MainForm> mainform_;
 };
 
 class MainForm: public nana::form
 {
 public:
+    MainForm();
     virtual ~MainForm();
 
     HWND GetHWND();
     void ForegroundHwnd();
+
+    void Init();
 
 protected:
     void wait_for_this();
 
 private:
     friend class MainFormDelegate;
-    friend class MainFormMessageLoop;
-
-    MainForm();
 
     void OnSingleClick(const nana::arg_click& arg);
     void OnReadMemoryData();

@@ -1,9 +1,7 @@
 ﻿#ifndef _MAIN_FORM_MESSAGELOOP_H_
 #define _MAIN_FORM_MESSAGELOOP_H_
 
-#include <memory>
-
-class MainForm;
+class MainFormDelegate;
 
 class MainFormMessageLoop
 {
@@ -15,8 +13,7 @@ public:
     void EndMainForm();
     void MessageLoop();
 
-private:
-    std::shared_ptr<MainForm> main_form_;
+    MainFormDelegate* delegate_;
 };
 
 #endif

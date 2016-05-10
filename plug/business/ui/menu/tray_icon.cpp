@@ -12,23 +12,15 @@ namespace
 {
 const wchar_t* tray_tips = L"QQ连连看看外挂";
 const wchar_t* tray_img_path = L"..\\bin\\QQGame 001.ico";
-void OnMenuItem(const nana::menu::item_proxy& ip)
-{
-    switch (ip.index())
-    {
-        case 1:
-            break;
-        default:
-            break;
-    }
-}
 }
 
 TrayIcon::TrayIcon()
     : tray_icon_()
     , taskbar_()
+    , delegate_()
 {
     ::CoInitialize(NULL);
+    delegate_ = MainFormDelegate::Get();
     // registerwindowmessage
 }
 
@@ -41,7 +33,7 @@ void TrayIcon::AddTrayIcon()
 {
     if (!tray_icon_)
     {
-        tray_icon_.reset(new nana::notifier(*MainFormDelegate::Get()));
+        tray_icon_.reset(new nana::notifier(delegate_->GetHandle()));
     }
 
     tray_icon_->icon(tray_img_path);
@@ -54,50 +46,54 @@ void TrayIcon::OnTrayIconNotify(const nana::arg_notifier& arg)
 {
     if (arg.left_button)
     {
-        MainFormDelegate::Get()->ForegroundHwnd();
+        if (delegate_)
+            delegate_->ForegroundHwnd();
     }
-
-    /*tray_icon_->events().mouse_down([this](const nana::arg_notifier& arg)
+    else if (arg.right_button)
     {
-        if (arg.left_button)
+        nana::menu tray_menu;
+        auto menu_handle = [&tray_menu](const nana::menu::item_proxy& ip) -> void
         {
-            HWND hWnd = GetHWND();
-            this->OnForegroundHwnd(hWnd);
-        }
-        else if (arg.right_button)
-        {
-            nana::menu* tray_menu = new nana::menu();
-            tray_menu->append(L"test", OnMenuItem);
-            POINT pt = { 0 };
-            ::GetCursorPos(&pt);
-            HMONITOR monitor =
-                ::MonitorFromPoint(pt, MONITOR_DEFAULTTONEAREST);
-            MONITORINFO mi = { 0 };
-            mi.cbSize = sizeof(mi);
-            POINT p = pt;
-            if (monitor && ::GetMonitorInfo(monitor, &mi))
+            switch (ip.index())
             {
-                if (pt.x + tray_menu->item_pixels() > mi.rcWork.right)
-                {
-                    p.x = pt.x - tray_menu->item_pixels();
-                }
+            case 0:
+                tray_menu.checked(0, true);
+                break;
+            default:
+                break;
+            }
+        };
 
-                if (pt.y + tray_menu->item_pixels() < mi.rcWork.bottom)
-                {
-                    p.y = pt.y - tray_menu->size() == 1 ? pt.y - 2 * tray_menu->item_pixels() : pt.y - tray_menu->size() * tray_menu->item_pixels();
-                }
-                else
-                {
-                    p.y = pt.y - tray_menu->size() == 1 ? pt.y - 2 * tray_menu->item_pixels() : pt.y - tray_menu->size() * tray_menu->item_pixels();
-                }
-                //tray_menu->popup(nullptr, pt.x, pt.y);
-                tray_menu->popup_await(nullptr, p.x, p.y);
+        tray_menu.append(L"游戏最前", menu_handle);
+        tray_menu.append_splitter();
+        tray_menu.append(L"自动挂机", menu_handle);
+        tray_menu.append(L"自动开局", menu_handle);
+
+        POINT pt = { 0 };
+        ::GetCursorPos(&pt);
+        HMONITOR monitor = ::MonitorFromPoint(pt, MONITOR_DEFAULTTONEAREST);
+        MONITORINFO mi = { 0 };
+        mi.cbSize = sizeof(mi);
+        POINT p = pt;
+        if (monitor && ::GetMonitorInfo(monitor, &mi))
+        {
+            if (static_cast<LONG>(pt.x + tray_menu.item_pixels()) > mi.rcWork.right)
+            {
+                p.x = pt.x - tray_menu.item_pixels();
             }
 
-            delete tray_menu;
+            if (static_cast<LONG>(pt.y + tray_menu.item_pixels()) < mi.rcWork.bottom)
+            {
+                p.y = pt.y - tray_menu.size() == 1 ? pt.y - 2 * tray_menu.item_pixels() : pt.y - tray_menu.size() * tray_menu.item_pixels();
+            }
+            else
+            {
+                p.y = pt.y - tray_menu.size() == 1 ? pt.y - 2 * tray_menu.item_pixels() : pt.y - tray_menu.size() * tray_menu.item_pixels();
+            }
+
+            tray_menu.popup_await(nullptr, p.x, p.y);
         }
-    });
-    */
+    }
 }
 
 bool TrayIcon::ThumbBarAddButtons()
@@ -125,8 +121,7 @@ bool TrayIcon::ThumbBarAddButtons()
 
     ptbl->HrInit();
 
-    hr = ptbl->ThumbBarAddButtons(MainFormDelegate::Get()->GetHWND(), ARRAYSIZE(thmb),
-                                  thmb);
+    hr = ptbl->ThumbBarAddButtons(delegate_->GetHWND(), ARRAYSIZE(thmb), thmb);
     ptbl->Release();
     return SUCCEEDED(hr);
 }
@@ -150,7 +145,7 @@ bool TrayIcon::ThumbBarUpdateButtons()
 
     HRESULT hr = S_OK;
     if (taskbar_)
-        hr = taskbar_->ThumbBarUpdateButtons(MainFormDelegate::Get()->GetHWND(),
+        hr = taskbar_->ThumbBarUpdateButtons(delegate_->GetHWND(),
                                              ARRAYSIZE(thmb), thmb);
     return SUCCEEDED(hr);
 }
@@ -167,6 +162,6 @@ void TrayIcon::SetIcon()
     // 需要32位 否则不清晰
     HICON hIcon = reinterpret_cast<HICON>(::LoadImage(GetModuleHandle(NULL),
         MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, 32, 32, 0));
-    ::SendMessage(MainFormDelegate::Get()->GetHWND(), WM_SETICON, ICON_SMALL,
+    ::SendMessage(delegate_->GetHWND(), WM_SETICON, ICON_SMALL,
                   reinterpret_cast<LPARAM>(hIcon));
 }
