@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\stubdata">
+      <UniqueIdentifier>{EF636139-A619-BA3D-1538-ABE82AB5865A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client">
+      <UniqueIdentifier>{A9537671-E7FD-2F0E-DE29-6155260B6944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client">
+      <UniqueIdentifier>{A9537671-E7FD-2F0E-DE29-6155260B6944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client">
+      <UniqueIdentifier>{A9537671-E7FD-2F0E-DE29-6155260B6944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client\toolchain">
+      <UniqueIdentifier>{A1380BF2-B2E4-A638-7882-599BD9BAE887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client\toolchain\win_x86">
+      <UniqueIdentifier>{47F03B19-AA7A-005C-1115-62AC53031C80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\native_client\toolchain\win_x86\pnacl_newlib">
+      <UniqueIdentifier>{E4581D44-A3E7-32A3-8310-EC6884814066}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\stubdata\stubdata.c">
+      <Filter>source\stubdata</Filter>
+    </ClCompile>
+    <ClInclude Include="source\common\unicode\uvernum.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <None Include="icu_nacl.gyp"/>
+    <None Include="..\..\native_client\build\build_nexe.py">
+      <Filter>..\..\native_client\build</Filter>
+    </None>
+    <None Include="..\..\native_client\build\build_nexe_tools.py">
+      <Filter>..\..\native_client\build</Filter>
+    </None>
+    <ClInclude Include="source\common\putilimp.h">
+      <Filter>source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ucmndata.h">
+      <Filter>source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\umapfile.h">
+      <Filter>source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\localpointer.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\platform.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\ptypes.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\putil.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\uconfig.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\udata.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\umachine.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\urename.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\utf.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\utf16.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\utf8.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\utf_old.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\utypes.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\unicode\uversion.h">
+      <Filter>source\common\unicode</Filter>
+    </ClInclude>
+    <None Include="pnacl_newlib.icudata_nacl.source_list.gypcmd"/>
+    <None Include="..\..\native_client\toolchain\win_x86\pnacl_newlib\pnacl_newlib.json">
+      <Filter>..\..\native_client\toolchain\win_x86\pnacl_newlib</Filter>
+    </None>
+  </ItemGroup>
+</Project>
