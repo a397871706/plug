@@ -1,4 +1,4 @@
-#include "../../business/ui/main_form.h"
+#include "main_form.h"
 
 #include <stdlib.h> 
 #include <Winuser.h>
@@ -11,9 +11,12 @@
 #include <nana/gui/programming_interface.hpp>
 #include <nana/gui/tooltip.hpp>
 #include <nana/threads/pool.hpp>
+#include <nana/gui/programming_interface.hpp>
+#include <nana/gui/basis.hpp>
 
-#include "../../third_party/nana/include/nana/gui/programming_interface.hpp"
-#include "../../third_party/nana/include/nana/gui/basis.hpp"
+#include <base/message_loop/message_loop.h>
+#include <base/bind.h>
+
 #include "../../skill/privilege/promote_privilege.h"
 #include "../../business/algorithm/link_game_type.h"
 #include "../../business/algorithm/link_game.h"
@@ -54,6 +57,7 @@ MainForm::MainForm()
     , long_start_timer_()
     , pool_(new nana::threads::pool(1))
     , trayicon_()
+    , ui_message_loop_(base::MessageLoop::current())
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
@@ -107,9 +111,6 @@ MainForm::MainForm()
     moust_top_->caption(L"游戏最前");
     moust_top_->check(false);
     moust_top_->events().click.connect(std::bind(&MainForm::OnMoustTop, this, _1));
-
-    link_game_.reset(new plug::LinkGameEraser(
-        std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
 
     events().command.connect(std::bind(&MainForm::OnCommand, this, _1));
 
@@ -403,7 +404,7 @@ HWND MainForm::GetHWND()
 
 void MainForm::wait_for_this()
 {
-    nana::form::wait_for_this();
+    //nana::form::wait_for_this();
 }
 
 void MainForm::OnCommand(const nana::arg_command& arg)
@@ -424,6 +425,20 @@ void MainForm::Init()
         trayicon_->SetIcon();
         trayicon_->AddTrayIcon();
     }
+
+    if (ui_message_loop_)
+    {
+        ui_message_loop_->PostTask(FROM_HERE,
+                                   base::Bind(&MainForm::OnGameAlgorithm,
+                                   base::Unretained(this)));
+    }
+}
+
+void MainForm::OnGameAlgorithm()
+{
+    if (!link_game_)
+        link_game_.reset(new plug::LinkGameEraser(
+            std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
 }
 
 MainFormDelegate* MainFormDelegate::delegate_ = nullptr;
@@ -452,10 +467,11 @@ void MainFormDelegate::Release()
 
 }
 
-void MainFormDelegate::MessageLoop()
+void MainFormDelegate::Show()
 {
     mainform_->show();
-    mainform_->wait_for_this();
+    mainform_->Init();
+    //mainform_->wait_for_this();
 }
 
 HWND MainFormDelegate::GetHWND()
@@ -471,9 +487,4 @@ void MainFormDelegate::ForegroundHwnd()
 nana::window MainFormDelegate::GetHandle()
 {
     return mainform_->handle();
-}
-
-void MainFormDelegate::Init()
-{
-    mainform_->Init();
 }

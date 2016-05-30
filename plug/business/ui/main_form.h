@@ -5,6 +5,7 @@
 #include <Windows.h>
 
 #include <nana/gui/widgets/form.hpp>
+#include <base/memory/ref_counted.h>
 
 namespace plug
 {
@@ -27,6 +28,11 @@ class pool;
 }
 }
 
+namespace base
+{
+class MessageLoop;
+}
+
 class MainForm;
 class TrayIcon;
 
@@ -37,9 +43,8 @@ public:
 
     static MainFormDelegate* Get();
     void Release();
-    void MessageLoop();
+    void Show();
 
-    void Init();
     HWND GetHWND();
     void ForegroundHwnd();
     nana::window GetHandle();
@@ -48,7 +53,7 @@ private:
     MainFormDelegate();
 
     static MainFormDelegate* delegate_;
-    std::shared_ptr<MainForm> mainform_;
+    std::unique_ptr<MainForm> mainform_;
 };
 
 class MainForm: public nana::form
@@ -90,6 +95,7 @@ private:
 
     void OnForegroundHwnd(HWND hWnd);
     HANDLE GetPrivilege();
+    void OnGameAlgorithm();
 
     std::unique_ptr<nana::button> start_;
     std::unique_ptr<nana::timer> timer_;
@@ -106,6 +112,7 @@ private:
     std::unique_ptr<nana::threads::pool> pool_;
     std::unique_ptr<TrayIcon> trayicon_;
     POINT current_pt_;
+    base::MessageLoop* ui_message_loop_;
 };
 
 

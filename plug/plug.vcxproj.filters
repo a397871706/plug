@@ -47,6 +47,9 @@
     <ClCompile Include="business\ui\main_form_messageloop.cpp">
       <Filter>business\ui</Filter>
     </ClCompile>
+    <ClCompile Include="business\ui\main_form_despatcher.cpp">
+      <Filter>business\ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
@@ -72,6 +75,9 @@
       <Filter>business\ui\menu</Filter>
     </ClInclude>
     <ClInclude Include="business\ui\main_form_messageloop.h">
+      <Filter>business\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="business\ui\main_form_despatcher.h">
       <Filter>business\ui</Filter>
     </ClInclude>
   </ItemGroup>

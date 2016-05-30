@@ -43,8 +43,8 @@
     <LinkIncremental>true</LinkIncremental>
     <IntDir>$(SolutionDir)$(Configuration)\obj\$(ProjectName)\</IntDir>
     <LibraryPath>$(SolutionDir)$(Configuration)\;$(LibraryPath)</LibraryPath>
-    <IncludePath>.\third_party\nana\include;$(IncludePath)</IncludePath>
-    <SourcePath>.\third_party\nana\source;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)\third_party\chromium;$(ProjectDir)\third_party\nana\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)\third_party\chromium;$(ProjectDir)\third_party\nana\source;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -59,14 +59,14 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>D:\proj\plug\Debug\obj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>nana_d.lib;base_plug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>nana_d.lib;base_plug.lib;base.lib;DbgHelp.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
@@ -92,6 +92,7 @@
   <ItemGroup>
     <ClCompile Include="business\algorithm\link_game.cpp" />
     <ClCompile Include="business\ui\main_form.cpp" />
+    <ClCompile Include="business\ui\main_form_despatcher.cpp" />
     <ClCompile Include="business\ui\main_form_messageloop.cpp" />
     <ClCompile Include="business\ui\menu\tray_icon.cpp" />
     <ClCompile Include="skill\base\app_reg.cpp" />
@@ -102,6 +103,7 @@
     <ClInclude Include="business\algorithm\link_game.h" />
     <ClInclude Include="business\algorithm\link_game_type.h" />
     <ClInclude Include="business\ui\main_form.h" />
+    <ClInclude Include="business\ui\main_form_despatcher.h" />
     <ClInclude Include="business\ui\main_form_messageloop.h" />
     <ClInclude Include="business\ui\menu\tray_icon.h" />
     <ClInclude Include="business\ui\virtual_factory.h" />
