@@ -96,6 +96,7 @@
     <ClCompile Include="business\ui\main_form_messageloop.cpp" />
     <ClCompile Include="business\ui\menu\tray_icon.cpp" />
     <ClCompile Include="skill\base\app_reg.cpp" />
+    <ClCompile Include="skill\hook\hook_message.cpp" />
     <ClCompile Include="skill\privilege\promote_privilege.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
@@ -109,6 +110,8 @@
     <ClInclude Include="business\ui\virtual_factory.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="skill\base\app_reg.h" />
+    <ClInclude Include="skill\hook\hook_message.h" />
+    <ClInclude Include="skill\hook\hook_type.h" />
     <ClInclude Include="skill\privilege\promote_privilege.h" />
   </ItemGroup>
   <ItemGroup>

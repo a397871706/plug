@@ -525,17 +525,6 @@ namespace nana
 		const arg_mouse* mouse_args;	///< If it is not null, it refers to the mouse arguments for click event emitted by mouse, nullptr otherwise.
 	};
 
-    // xulijun_update_state
-    // wm_command event
-    struct arg_command : public event_arg
-    {
-        ::nana::window window_handle;
-        mutable unsigned short hwparam;
-        mutable unsigned short lwparam;
-    };
-
-    // xulijun_update_end
-
     /// provides some fundamental events that every widget owns.
 	struct general_events
 	{
@@ -561,11 +550,6 @@ namespace nana
 		basic_event<arg_resized>	resized;	///< the window is changing its size
 
 		basic_event<arg_destroy>	destroy;	///< the window is destroyed, but occurs when all children have been destroyed
-
-        // xulijun_update_start
-        // add wm_command callback event
-        basic_event<arg_command> command;
-        // xulijun_update_end
 	};
 
 	namespace detail

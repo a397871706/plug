@@ -1,4 +1,4 @@
-#include "main_form_despatcher.h"
+﻿#include "main_form_despatcher.h"
 
 MainFormDespatcher::MainFormDespatcher()
     : base::MessagePumpDispatcher()

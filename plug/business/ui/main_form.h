@@ -7,6 +7,9 @@
 #include <nana/gui/widgets/form.hpp>
 #include <base/memory/ref_counted.h>
 
+#include "../../skill/hook/hook_message.h"
+#include "../../skill/hook/hook_type.h"
+
 namespace plug
 {
 class LinkGame;
@@ -36,7 +39,7 @@ class MessageLoop;
 class MainForm;
 class TrayIcon;
 
-class MainFormDelegate
+class MainFormDelegate : public MessageListening
 {
 public:
     ~MainFormDelegate();
@@ -48,6 +51,10 @@ public:
     HWND GetHWND();
     void ForegroundHwnd();
     nana::window GetHandle();
+
+protected:
+    virtual void ProcessMessage(HWND hwnd, UINT msg, WPARAM w, LPARAM l)
+        override;
 
 private:
     MainFormDelegate();
@@ -91,8 +98,6 @@ private:
     bool IsSquareAllClear();
     void OnLongStart();
 
-    void OnCommand(const nana::arg_command& arg);
-
     void OnForegroundHwnd(HWND hWnd);
     HANDLE GetPrivilege();
     void OnGameAlgorithm();
@@ -113,6 +118,7 @@ private:
     std::unique_ptr<TrayIcon> trayicon_;
     POINT current_pt_;
     base::MessageLoop* ui_message_loop_;
+    HookMessage hook_message_;
 };
 
 

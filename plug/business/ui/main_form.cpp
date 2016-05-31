@@ -38,6 +38,7 @@ const int startSecode = 5 * 1000;
 
 MainForm::~MainForm()
 {
+    hook_message_.Release();
 }
 
 MainForm::MainForm()
@@ -58,6 +59,7 @@ MainForm::MainForm()
     , pool_(new nana::threads::pool(1))
     , trayicon_()
     , ui_message_loop_(base::MessageLoop::current())
+    , hook_message_()
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
@@ -112,12 +114,11 @@ MainForm::MainForm()
     moust_top_->check(false);
     moust_top_->events().click.connect(std::bind(&MainForm::OnMoustTop, this, _1));
 
-    events().command.connect(std::bind(&MainForm::OnCommand, this, _1));
-
     /*
     nana::threads::pool regPool(1);
     regPool.push(plug::SetAppReg);
     regPool.wait_for_finished();*/
+    hook_message_.Acquire();
 }
 
 void MainForm::OnSingleClick(const nana::arg_click& arg)
@@ -407,11 +408,6 @@ void MainForm::wait_for_this()
     //nana::form::wait_for_this();
 }
 
-void MainForm::OnCommand(const nana::arg_command& arg)
-{
-
-}
-
 void MainForm::ForegroundHwnd()
 {
     OnForegroundHwnd(GetHWND());
@@ -446,7 +442,7 @@ MainFormDelegate* MainFormDelegate::delegate_ = nullptr;
 MainFormDelegate::MainFormDelegate()
     : mainform_(new MainForm())
 {
-
+    HookMessageHelper::GetInstance()->SetHookListening(this);
 }
 
 MainFormDelegate::~MainFormDelegate()
@@ -487,4 +483,9 @@ void MainFormDelegate::ForegroundHwnd()
 nana::window MainFormDelegate::GetHandle()
 {
     return mainform_->handle();
+}
+
+void MainFormDelegate::ProcessMessage(HWND hwnd, UINT msg, WPARAM w, LPARAM l)
+{
+
 }

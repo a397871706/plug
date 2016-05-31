@@ -3,6 +3,7 @@
 #include <base/at_exit.h>
 #include <base/run_loop.h>
 #include <base/message_loop/message_loop.h>
+#include <base/threading/platform_thread.h>
 
 #include "main_form_despatcher.h"
 #include "main_form.h"
@@ -28,8 +29,6 @@ void MainFormMessageLoop::Shutdown()
         delete main_form_delegate;
         main_form_delegate = nullptr;
     }
-
-    at_exit_manager_ = nullptr;
 }
 
 void MainFormMessageLoop::Run()
@@ -44,5 +43,6 @@ void MainFormMessageLoop::Initialize()
     at_exit_manager_.reset(new base::AtExitManager());
     message_loop_ui_.reset(new base::MessageLoopForUI());
     auto main_form = MainFormDelegate::Get();
+    base::PlatformThread::SetName("plug线程");
     main_form->Show();
 }

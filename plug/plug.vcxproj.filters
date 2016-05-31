@@ -26,6 +26,9 @@
     <Filter Include="business\ui\menu">
       <UniqueIdentifier>{7421f6d9-eaa0-452e-b16a-5a684f1b9bb9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="skill\hook">
+      <UniqueIdentifier>{3184e5f1-7062-4170-8ea2-2bc0ffd28341}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -49,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="business\ui\main_form_despatcher.cpp">
       <Filter>business\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="skill\hook\hook_message.cpp">
+      <Filter>skill\hook</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="business\ui\main_form_despatcher.h">
       <Filter>business\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\hook\hook_message.h">
+      <Filter>skill\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\hook\hook_type.h">
+      <Filter>skill\hook</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
