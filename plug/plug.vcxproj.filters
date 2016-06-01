@@ -29,6 +29,9 @@
     <Filter Include="skill\hook">
       <UniqueIdentifier>{3184e5f1-7062-4170-8ea2-2bc0ffd28341}</UniqueIdentifier>
     </Filter>
+    <Filter Include="skill\inject">
+      <UniqueIdentifier>{952b3e25-1a22-473b-909e-d2fa47ee3702}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -55,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="skill\hook\hook_message.cpp">
       <Filter>skill\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="skill\inject\remote_inject.cpp">
+      <Filter>skill\inject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="skill\hook\hook_type.h">
       <Filter>skill\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\inject\remote_inject.h">
+      <Filter>skill\inject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

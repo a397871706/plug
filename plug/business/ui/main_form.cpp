@@ -198,10 +198,15 @@ void MainForm::OnAutoWaitFor(const nana::arg_click& arg)
     }
 }
 
+#include "../../skill/inject/remote_inject.h"
+
 void MainForm::OnAutoStart(const nana::arg_click& arg)
 {
     if (!auto_start_ || !start_timer_)
         return;
+
+    RemoteInject inject;
+    inject.InjectDll(RemoteInject::REMOTE_THREAD);
 
     if (auto_start_->checked())
     {

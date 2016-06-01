@@ -50,7 +50,7 @@ BOOL ProcessSnapshoot(const std::wstring& processName, int* procrssId)
     ::Process32First(snapshot, &pr32);
     do 
     {
-        if (_tcscmp(pr32.szExeFile, processName.c_str()))
+        if (_tcscmp(pr32.szExeFile, processName.c_str()) == 0)
         {
             *procrssId = pr32.th32ProcessID;
             break;

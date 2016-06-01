@@ -1,8 +1,9 @@
 ﻿#include "app_reg.h"
 
 #include <sstream>
+#include <base/win/registry.h>
 
-#include "../../../base_plug/include/regedit.h"
+using base::win::RegKey;
 
 namespace plug
 {

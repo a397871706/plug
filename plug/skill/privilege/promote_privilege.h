@@ -11,7 +11,7 @@ HANDLE OpenProcess(DWORD processId);
 
 BOOL PromotePrivilege();
 
-BOOL ProcessSnapshoot(const std::wstring& processName, int processId);
+BOOL ProcessSnapshoot(const std::wstring& processName, int* processId);
 
 BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivileg);
 
