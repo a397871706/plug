@@ -13,6 +13,8 @@ BOOL PromotePrivilege();
 
 BOOL ProcessSnapshoot(const std::wstring& processName, int* processId);
 
+BYTE* ProcessSnapshootModule(const std::wstring&dllName, const int processID);
+
 BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivileg);
 
 }

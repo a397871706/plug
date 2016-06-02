@@ -33,6 +33,8 @@ private:
     void OnNtCreateThread(const LoadLibraryAddres& proc,
                           const NtCreateThreadEx& NtCreateThreadObject,
                           const base::win::ScopedHandle& handle, void* param);
+
+    bool EjectDllByRemoteThread(const std::wstring& procName);
 };
 
 #endif

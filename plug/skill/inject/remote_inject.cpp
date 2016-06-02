@@ -24,7 +24,9 @@ RemoteInject::~RemoteInject()
 
 bool RemoteInject::InjectDll(InjectType type)
 {
-    InjectDllByRemoteThread(L"MFCApplication1.exe");
+    std::wstring str = L"MyCmd.exe";
+    InjectDllByRemoteThread(str);
+    EjectDllByRemoteThread(str);
     return true;
 }
 
@@ -155,6 +157,50 @@ void RemoteInject::OnNtCreateThread(const LoadLibraryAddres& proc,
                              param, FALSE, NULL, NULL, NULL, NULL);
         ::WaitForSingleObject(remote, INFINITE);
         ::CloseHandle(remote);
+    }
+}
+
+bool RemoteInject::EjectDllByRemoteThread(const std::wstring& procName)
+{
+    int processID = 0;
+    if (!plug::ProcessSnapshoot(procName, &processID) && (processID == 0))
+        return false;
+
+    ScopedHandle tagerProcess(plug::OpenProcess(processID));
+    if (!tagerProcess.IsValid())
+    {
+        if (plug::PromotePrivilege())
+        {
+            tagerProcess.Set(plug::OpenProcess(processID));
+            if (!tagerProcess.IsValid())
+                return false;
+        }
+    }
+
+    BYTE* baseAddress = plug::ProcessSnapshootModule(InjectDllName, processID);
+    if (!baseAddress)
+        return false;
+
+    LoadLibraryAddres LoadLibraryObject =
+        reinterpret_cast<LoadLibraryAddres>(
+        ::GetProcAddress(::GetModuleHandle(L"Kernel32.dll"), "FreeLibrary"));
+
+    NtCreateThreadEx NtCreateThreadObject =
+        reinterpret_cast<NtCreateThreadEx>(
+        ::GetProcAddress(GetModuleHandleW(L"ntdll.dll"), "NtCreateThreadEx"));
+    if (NtCreateThreadObject)
+    {
+        OnNtCreateThread(LoadLibraryObject, NtCreateThreadObject, tagerProcess,
+                         reinterpret_cast<void*>(baseAddress));
+    }
+    else
+    {
+        ScopedHandle remote(::CreateRemoteThread(
+            tagerProcess.Get(), NULL, NULL,
+            reinterpret_cast<LPTHREAD_START_ROUTINE>(LoadLibraryObject),
+            reinterpret_cast<void*>(baseAddress), NULL, NULL));
+        if (remote.IsValid())
+            ::WaitForSingleObject(remote.Get(), INFINITE);
     }
 }
 

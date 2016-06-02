@@ -3,6 +3,9 @@
 #include <tchar.h>
 #include <Tlhelp32.h>
 
+#include <base/win/scoped_handle.h>
+
+using base::win::ScopedHandle;
 
 namespace plug
 {
@@ -105,6 +108,27 @@ BOOL SetPrivilege(
     }
 
     return TRUE;
+}
+
+BYTE* ProcessSnapshootModule(const std::wstring&dllName, const int processID)
+{
+    MODULEENTRY32 me = {};
+    me.dwSize = sizeof(me);
+    ScopedHandle handle(::CreateToolhelp32Snapshot(TH32CS_SNAPMODULE, processID));
+    if (handle.IsValid())
+    {
+        ::Module32First(handle.Get(), &me);
+        for (;;::Module32Next(handle.Get(), &me))
+        {
+            if (!_tcsicmp(reinterpret_cast<wchar_t*>(me.szModule), dllName.c_str()) ||
+                !_tcsicmp(reinterpret_cast<wchar_t*>(me.szExePath), dllName.c_str()))
+            {
+                return me.modBaseAddr;
+            }
+        }
+    }
+
+    return nullptr;
 }
 
 }

@@ -32,10 +32,7 @@
 *.aps
 *.opensdf
 
-Debug/obj/
-Debug/*.exp
-Debug/*.ilk
-Debug/*.pdb
+Debug/
 Release/
 */Debug/
 */*/Debug/

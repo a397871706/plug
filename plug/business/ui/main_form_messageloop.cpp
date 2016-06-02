@@ -17,7 +17,6 @@ MainFormMessageLoop::MainFormMessageLoop()
 
 MainFormMessageLoop::~MainFormMessageLoop()
 {
-
 }
 
 void MainFormMessageLoop::Shutdown()

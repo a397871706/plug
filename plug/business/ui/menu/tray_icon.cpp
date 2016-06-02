@@ -56,8 +56,9 @@ void TrayIcon::OnTrayIconNotify(const nana::arg_notifier& arg)
         {
             switch (ip.index())
             {
-            case 0:
-                tray_menu.checked(0, true);
+                case 0:
+                {
+                }
                 break;
             default:
                 break;
@@ -68,6 +69,7 @@ void TrayIcon::OnTrayIconNotify(const nana::arg_notifier& arg)
         tray_menu.append_splitter();
         tray_menu.append(L"自动挂机", menu_handle);
         tray_menu.append(L"自动开局", menu_handle);
+        tray_menu.check_style(0, nana::menu::checks::option);
 
         POINT pt = { 0 };
         ::GetCursorPos(&pt);
