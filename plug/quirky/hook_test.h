@@ -31,6 +31,7 @@ public:
 
 private:
     static LRESULT CALLBACK GetMsgProc(int code, WPARAM wParam, LPARAM lParam);
+    static INT_PTR CALLBACK DilogBox(HWND h, UINT m, WPARAM w, LPARAM l);
 
     static HHOOK hook_;
 };

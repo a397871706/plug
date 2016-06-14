@@ -1,4 +1,5 @@
 ﻿#include "hook_test.h"
+#include "resource.h"
 
 HookInterface* hInterface = nullptr;
 extern HMODULE gModule;
@@ -50,6 +51,9 @@ BOOL HookEx::SendMessage(UINT msg, WPARAM w, LPARAM l)
     return TRUE;
 }
 
+
+
+
 LRESULT CALLBACK HookEx::GetMsgProc(int code, WPARAM wParam, LPARAM lParam)
 {
     if (code < 0)
@@ -61,13 +65,20 @@ LRESULT CALLBACK HookEx::GetMsgProc(int code, WPARAM wParam, LPARAM lParam)
     MSG* msg = reinterpret_cast<MSG*>(lParam);
     if (msg)
     {
-        if (msg->message == WM_KEYDOWN || msg->message == WM_KEYUP)
+        if (msg->message == WM_KEYDOWN)
         {
-            if (msg->wParam == VK_HOME)
+            if ((msg->wParam == VK_HOME) && ((msg->lParam << 30) & 0x40000000))
             {
+                ::DialogBoxParam(gModule, MAKEINTRESOURCE(IDD_DIALOG1), NULL,
+                                 DilogBox, NULL);
             }
         }
     }
 
     return ::CallNextHookEx(hook_, code, wParam, lParam);
+}
+
+INT_PTR CALLBACK HookEx::DilogBox(HWND h, UINT m, WPARAM w, LPARAM l)
+{
+    return 0;
 }
