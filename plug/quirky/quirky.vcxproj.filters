@@ -21,6 +21,10 @@
     <ClInclude Include="export_macro.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="hook_client.h" />
+    <ClInclude Include="test\export_question_test.h" />
+    <ClInclude Include="test\export_question_type.h" />
+    <ClInclude Include="hook_test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -32,5 +36,8 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="hook_client.cpp" />
+    <ClCompile Include="test\export_question_test.cpp" />
+    <ClCompile Include="hook_test.cpp" />
   </ItemGroup>
 </Project>

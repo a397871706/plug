@@ -205,8 +205,10 @@ void MainForm::OnAutoStart(const nana::arg_click& arg)
     if (!auto_start_ || !start_timer_)
         return;
 
-    RemoteInject inject;
+    static  RemoteInject inject;
+    inject.Init();
     inject.InjectDll(RemoteInject::REMOTE_THREAD);
+//    inject.Release();
 
     if (auto_start_->checked())
     {

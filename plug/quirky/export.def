@@ -1,1 +1,3 @@
 EXPORTS 
+SetHook @1
+Release @2

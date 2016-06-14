@@ -4,6 +4,7 @@
 #include <base/files/file_path.h>
 
 #include "../privilege/promote_privilege.h"
+#include "../../quirky/hook_test.h"
 
 using base::win::ScopedHandle;
 
@@ -13,6 +14,9 @@ const wchar_t* InjectDllName = L"quirky.dll";
 }
 
 RemoteInject::RemoteInject()
+    : hook_(nullptr)
+    , dll_()
+    , releaseHook_()
 {
 
 }
@@ -24,9 +28,8 @@ RemoteInject::~RemoteInject()
 
 bool RemoteInject::InjectDll(InjectType type)
 {
-    std::wstring str = L"MyCmd.exe";
-    InjectDllByRemoteThread(str);
-    EjectDllByRemoteThread(str);
+ //   InjectDllByRemoteThread(L"MFCApplication1.exe");
+    InjectDllByHook();
     return true;
 }
 
@@ -107,6 +110,9 @@ bool RemoteInject::InjectDllByRemoteThread(const std::wstring& procName)
 
 bool RemoteInject::InjectDllByHook()
 {
+    if (hook_)
+        hook_->SetHook(0);
+
     return true;
 }
 
@@ -160,47 +166,35 @@ void RemoteInject::OnNtCreateThread(const LoadLibraryAddres& proc,
     }
 }
 
-bool RemoteInject::EjectDllByRemoteThread(const std::wstring& procName)
+void RemoteInject::Init()
 {
-    int processID = 0;
-    if (!plug::ProcessSnapshoot(procName, &processID) && (processID == 0))
-        return false;
-
-    ScopedHandle tagerProcess(plug::OpenProcess(processID));
-    if (!tagerProcess.IsValid())
+    std::shared_ptr<void> dll(::LoadLibrary(InjectDllName), ::FreeLibrary);
+    if (dll)
     {
-        if (plug::PromotePrivilege())
-        {
-            tagerProcess.Set(plug::OpenProcess(processID));
-            if (!tagerProcess.IsValid())
-                return false;
-        }
-    }
+        dll_ = dll;
 
-    BYTE* baseAddress = plug::ProcessSnapshootModule(InjectDllName, processID);
-    if (!baseAddress)
-        return false;
+        CreateHookInterface createHook = reinterpret_cast<CreateHookInterface>(
+            ::GetProcAddress(reinterpret_cast<HMODULE>(dll_.get()), "SetHook"));
 
-    LoadLibraryAddres LoadLibraryObject =
-        reinterpret_cast<LoadLibraryAddres>(
-        ::GetProcAddress(::GetModuleHandle(L"Kernel32.dll"), "FreeLibrary"));
+        DWORD err = ::GetLastError();
 
-    NtCreateThreadEx NtCreateThreadObject =
-        reinterpret_cast<NtCreateThreadEx>(
-        ::GetProcAddress(GetModuleHandleW(L"ntdll.dll"), "NtCreateThreadEx"));
-    if (NtCreateThreadObject)
-    {
-        OnNtCreateThread(LoadLibraryObject, NtCreateThreadObject, tagerProcess,
-                         reinterpret_cast<void*>(baseAddress));
+        RelaseHookInterface releaseHook = reinterpret_cast<RelaseHookInterface>(
+            ::GetProcAddress(reinterpret_cast<HMODULE>(dll_.get()), "Release"));
+
+        if (createHook)
+            hook_ = createHook();
+
+        if (releaseHook)
+            releaseHook_ = releaseHook;
     }
-    else
-    {
-        ScopedHandle remote(::CreateRemoteThread(
-            tagerProcess.Get(), NULL, NULL,
-            reinterpret_cast<LPTHREAD_START_ROUTINE>(LoadLibraryObject),
-            reinterpret_cast<void*>(baseAddress), NULL, NULL));
-        if (remote.IsValid())
-            ::WaitForSingleObject(remote.Get(), INFINITE);
-    }
+}
+
+void RemoteInject::Release()
+{
+    if (hook_)
+        hook_->ReleaseHook();
+
+    if (releaseHook_)
+        releaseHook_(hook_);
 }
 
