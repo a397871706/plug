@@ -44,6 +44,8 @@ private:
                           const NtCreateThreadEx& NtCreateThreadObject,
                           const base::win::ScopedHandle& handle, void* param);
 
+    bool EjectDllByRemoteThread(const std::wstring& procName);
+
     HookInterface* hook_;
     std::shared_ptr<void> dll_;
     RelaseHookInterface releaseHook_;
