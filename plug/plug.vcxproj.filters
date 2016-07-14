@@ -65,6 +65,9 @@
     <ClCompile Include="skill\inject\remote_inject.cpp">
       <Filter>skill\inject</Filter>
     </ClCompile>
+    <ClCompile Include="skill\ipc\ipc_server.cpp">
+      <Filter>skill\ipc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
@@ -105,6 +108,9 @@
       <Filter>skill\inject</Filter>
     </ClInclude>
     <ClInclude Include="skill\ipc\ipc_server.h">
+      <Filter>skill\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\ipc\ipc_listener.h">
       <Filter>skill\ipc</Filter>
     </ClInclude>
   </ItemGroup>

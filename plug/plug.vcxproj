@@ -100,6 +100,7 @@
     <ClCompile Include="skill\base\app_reg.cpp" />
     <ClCompile Include="skill\hook\hook_message.cpp" />
     <ClCompile Include="skill\inject\remote_inject.cpp" />
+    <ClCompile Include="skill\ipc\ipc_server.cpp" />
     <ClCompile Include="skill\privilege\promote_privilege.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
@@ -116,6 +117,7 @@
     <ClInclude Include="skill\hook\hook_message.h" />
     <ClInclude Include="skill\hook\hook_type.h" />
     <ClInclude Include="skill\inject\remote_inject.h" />
+    <ClInclude Include="skill\ipc\ipc_listener.h" />
     <ClInclude Include="skill\ipc\ipc_server.h" />
     <ClInclude Include="skill\privilege\promote_privilege.h" />
   </ItemGroup>
