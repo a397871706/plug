@@ -7,7 +7,7 @@
 
 #include <cstddef>  // For size_t.
 
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 namespace base {
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\dump_cache">
+      <UniqueIdentifier>{2ECF2F90-34FF-E502-2EFD-27518DD2C567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\dump_cache">
+      <UniqueIdentifier>{2ECF2F90-34FF-E502-2EFD-27518DD2C567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\dump_cache">
+      <UniqueIdentifier>{2ECF2F90-34FF-E502-2EFD-27518DD2C567}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\dump_cache\dump_cache.cc">
+      <Filter>tools\dump_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\dump_cache\dump_files.cc">
+      <Filter>tools\dump_cache</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\dump_cache\dump_files.h">
+      <Filter>tools\dump_cache</Filter>
+    </ClInclude>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+</Project>

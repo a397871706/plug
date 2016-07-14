@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="converters">
+      <UniqueIdentifier>{82B466F4-29CF-20CD-9C0F-2ECB6A78E3A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="converters\geometry">
+      <UniqueIdentifier>{82F64D97-DB43-5314-0379-87DF9F20B92F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="converters">
+      <UniqueIdentifier>{82B466F4-29CF-20CD-9C0F-2ECB6A78E3A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="converters\geometry">
+      <UniqueIdentifier>{82F64D97-DB43-5314-0379-87DF9F20B92F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="converters">
+      <UniqueIdentifier>{82B466F4-29CF-20CD-9C0F-2ECB6A78E3A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="converters\geometry">
+      <UniqueIdentifier>{82F64D97-DB43-5314-0379-87DF9F20B92F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="converters\geometry\geometry_type_converters.cc">
+      <Filter>converters\geometry</Filter>
+    </ClCompile>
+    <ClInclude Include="converters\geometry\geometry_type_converters.h">
+      <Filter>converters\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="converters\geometry\mojo_geometry_export.h">
+      <Filter>converters\geometry</Filter>
+    </ClInclude>
+    <None Include="mojo_base.gyp"/>
+  </ItemGroup>
+</Project>

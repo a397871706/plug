@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\common_type_converters_unittest.cc">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="message_pump\handle_watcher_unittest.cc">
+      <Filter>message_pump</Filter>
+    </ClCompile>
+    <ClCompile Include="message_pump\message_pump_mojo_unittest.cc">
+      <Filter>message_pump</Filter>
+    </ClCompile>
+    <None Include="mojo_base.gyp"/>
+  </ItemGroup>
+</Project>

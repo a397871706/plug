@@ -1,0 +1,1859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="services">
+      <UniqueIdentifier>{82C4CFE7-D48B-0297-09D9-A19994CF57E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\updater">
+      <UniqueIdentifier>{825340A3-33C2-97BE-44EC-101B06067EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates">
+      <UniqueIdentifier>{DC0785F6-2D5C-C749-6FC5-3CF3849416F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates">
+      <UniqueIdentifier>{1C97A123-4141-CB63-BBB3-49C3D6F69788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates">
+      <UniqueIdentifier>{B71B3313-67FB-5287-B8FA-7C28112D9CEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\python_templates">
+      <UniqueIdentifier>{6DAA9E22-D5F3-D592-4E12-AF37AF0BE224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\python_templates">
+      <UniqueIdentifier>{6DAA9E22-D5F3-D592-4E12-AF37AF0BE224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators">
+      <UniqueIdentifier>{08D9CF9C-19E8-B077-2196-338B73A00B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate">
+      <UniqueIdentifier>{43FE715B-25E9-49E9-A844-48C8E46915CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate">
+      <UniqueIdentifier>{43FE715B-25E9-49E9-A844-48C8E46915CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate">
+      <UniqueIdentifier>{43FE715B-25E9-49E9-A844-48C8E46915CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate">
+      <UniqueIdentifier>{43FE715B-25E9-49E9-A844-48C8E46915CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate">
+      <UniqueIdentifier>{43FE715B-25E9-49E9-A844-48C8E46915CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate">
+      <UniqueIdentifier>{43FE715B-25E9-49E9-A844-48C8E46915CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse">
+      <UniqueIdentifier>{5BE45B6D-853D-31BD-3A56-37DD043660FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse">
+      <UniqueIdentifier>{5BE45B6D-853D-31BD-3A56-37DD043660FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse">
+      <UniqueIdentifier>{5BE45B6D-853D-31BD-3A56-37DD043660FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse">
+      <UniqueIdentifier>{5BE45B6D-853D-31BD-3A56-37DD043660FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings">
+      <UniqueIdentifier>{BDD847E6-3B5D-27DC-A93A-863DCFC98735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib">
+      <UniqueIdentifier>{4E8D374B-CE36-67FF-1313-BED61188649D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom">
+      <UniqueIdentifier>{606AEB40-9915-A810-6206-6B8A1E852989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse">
+      <UniqueIdentifier>{5BE45B6D-853D-31BD-3A56-37DD043660FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)">
+      <UniqueIdentifier>{ECA95933-7FA6-5798-4EC4-C0CAC6DD34DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)\java_mojo">
+      <UniqueIdentifier>{D8E63436-AD7D-727E-5B25-B73E1A890640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)\java_mojo\updater_bindings_mojom">
+      <UniqueIdentifier>{A54B3EF6-4881-44B1-03EE-D8C4BB2C2F29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mojo_services.gyp"/>
+    <None Include="services\updater\updater.mojom">
+      <Filter>services\updater</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\mojom_bindings_generator.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\enum_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_macros.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_proxy_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_request_validator_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_response_validator_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\interface_stub_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\module.cc.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\module.h.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\module-internal.h.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\struct_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\struct_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\struct_macros.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\struct_serialization_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\wrapper_class_declaration.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates\wrapper_class_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\cpp_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\constant_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\constants.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\data_types_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\enum_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\enum.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\header.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\interface_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\interface_internal.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\interface.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\struct.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates\union.java.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\java_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\enum_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\interface_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\module_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\module.amd.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\struct_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\union_definition.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates\validation_macros.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\js_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\python_templates\module_macros.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\python_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\python_templates\module.py.tmpl">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators\python_templates</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\mojom_cpp_generator.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\mojom_java_generator.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\mojom_js_generator.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\generators\mojom_python_generator.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\generators</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\__init__.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\error.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate\__init__.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate\data.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate\generator.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate\module.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate\pack.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate\template_expander.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\generate</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse\__init__.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse\ast.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse\lexer.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse\parser.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse</Filter>
+    </None>
+    <None Include="..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse\translate.py">
+      <Filter>..\third_party\mojo\src\mojo\public\tools\bindings\pylib\mojom\parse</Filter>
+    </None>
+    <None Include="$(OutDir)\java_mojo\updater_bindings_mojom\updater_bindings_mojom.stamp">
+      <Filter>$(OutDir)\java_mojo\updater_bindings_mojom</Filter>
+    </None>
+  </ItemGroup>
+</Project>

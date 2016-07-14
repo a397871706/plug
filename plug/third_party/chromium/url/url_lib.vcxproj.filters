@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\mozilla">
+      <UniqueIdentifier>{20AD89ED-F29A-E322-7753-2F42D78E08AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\mozilla">
+      <UniqueIdentifier>{20AD89ED-F29A-E322-7753-2F42D78E08AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="android">
+      <UniqueIdentifier>{840B8E33-5F8C-45A0-5FD6-F07AA5687203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="android\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="android">
+      <UniqueIdentifier>{840B8E33-5F8C-45A0-5FD6-F07AA5687203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="android\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gurl.cc"/>
+    <ClInclude Include="gurl.h"/>
+    <ClCompile Include="origin.cc"/>
+    <ClInclude Include="origin.h"/>
+    <ClCompile Include="scheme_host_port.cc"/>
+    <ClInclude Include="scheme_host_port.h"/>
+    <ClCompile Include="third_party\mozilla\url_parse.cc">
+      <Filter>third_party\mozilla</Filter>
+    </ClCompile>
+    <ClInclude Include="third_party\mozilla\url_parse.h">
+      <Filter>third_party\mozilla</Filter>
+    </ClInclude>
+    <ClInclude Include="url_canon.h"/>
+    <ClCompile Include="url_canon_etc.cc"/>
+    <ClCompile Include="url_canon_filesystemurl.cc"/>
+    <ClCompile Include="url_canon_fileurl.cc"/>
+    <ClCompile Include="url_canon_host.cc"/>
+    <ClCompile Include="url_canon_icu.cc"/>
+    <ClInclude Include="url_canon_icu.h"/>
+    <ClCompile Include="url_canon_internal.cc"/>
+    <ClInclude Include="url_canon_internal.h"/>
+    <ClInclude Include="url_canon_internal_file.h"/>
+    <ClCompile Include="url_canon_ip.cc"/>
+    <ClInclude Include="url_canon_ip.h"/>
+    <ClCompile Include="url_canon_mailtourl.cc"/>
+    <ClCompile Include="url_canon_path.cc"/>
+    <ClCompile Include="url_canon_pathurl.cc"/>
+    <ClCompile Include="url_canon_query.cc"/>
+    <ClCompile Include="url_canon_relative.cc"/>
+    <ClCompile Include="url_canon_stdstring.cc"/>
+    <ClCompile Include="url_canon_stdurl.cc"/>
+    <ClCompile Include="url_constants.cc"/>
+    <ClInclude Include="url_constants.h"/>
+    <ClInclude Include="url_file.h"/>
+    <ClCompile Include="url_parse_file.cc"/>
+    <ClInclude Include="url_parse_internal.h"/>
+    <ClCompile Include="url_util.cc"/>
+    <ClInclude Include="url_util.h"/>
+    <None Include="url.gyp"/>
+    <ClCompile Include="android\url_jni_registrar.cc">
+      <Filter>android\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="android\url_jni_registrar.h">
+      <Filter>android\_excluded_files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

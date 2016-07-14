@@ -67,7 +67,7 @@
 
 #include "base/logging.h"
 #include "base/third_party/nspr/prtime.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include <windows.h>

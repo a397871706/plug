@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E77A96F-07BC-5932-D1E2-8D1E5224EAF2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>net_unittests</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <EmbedManifest>true</EmbedManifest>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>..\out\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4481;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4702;4267;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>precompile.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompile.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;cfgmgr32.lib;powrprof.lib;setupapi.lib;advapi32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib;credui.lib;netapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;cfgmgr32.dll;powrprof.dll;setupapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>..\build\win\compatibility.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..;$(OutDir)gen;$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4481;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4702;4267;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>precompile.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompile.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;cfgmgr32.lib;powrprof.lib;setupapi.lib;advapi32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib;credui.lib;netapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;cfgmgr32.dll;powrprof.dll;setupapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>..\build\win\compatibility.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..;$(OutDir)gen;$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /bigobj /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4481;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4702;4267;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>precompile.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompile.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;cfgmgr32.lib;powrprof.lib;setupapi.lib;advapi32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib;credui.lib;netapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat /largeaddressaware %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;cfgmgr32.dll;powrprof.dll;setupapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <Profile>true</Profile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>..\build\win\compatibility.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..;$(OutDir)gen;$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /we4389 /bigobj /d2Zi+ /Zc:inline /Oy- /Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4351;4355;4503;4589;4611;4100;4121;4244;4481;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4702;4267;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>precompile.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompile.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;cfgmgr32.lib;powrprof.lib;setupapi.lib;advapi32.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib;credui.lib;netapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.1/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/maxilksize:0x7ff00000 /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;cfgmgr32.dll;powrprof.dll;setupapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <Profile>true</Profile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>..\build\win\compatibility.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..;$(OutDir)gen;$(OutDir)gen;..\third_party\wtl\include;..;..\third_party\icu\source\common;..\third_party\icu\source\i18n;..\testing\gmock\include;..\testing\gtest\include;..\third_party\zlib;$(OutDir)gen\protoc_out;..\third_party\protobuf\vsprojects;..\third_party\protobuf\src;..\third_party\boringssl\src\include;..\third_party\mojo\src;..\v8\include;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;CLD_VERSION=2;_WIN32_WINNT=0x0603;WINVER=0x0603;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;_HAS_EXCEPTIONS=0;_WINSOCK_DEPRECATED_NO_WARNINGS;CHROMIUM_BUILD;CR_CLANG_REVISION=245965-1;COMPONENT_BUILD;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_PRE_SYNC_BACKUP;ENABLE_WEBRTC=1;ENABLE_MEDIA_ROUTER=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_TOPCHROME_MD=1;DONT_EMBED_BUILD_METADATA;FIELDTRIAL_TESTING_ENABLED;NO_TCMALLOC;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06030000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;ENABLE_PRINTING=1;ENABLE_BASIC_PRINTING=1;ENABLE_PRINT_PREVIEW=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_SUPERVISED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;V8_USE_EXTERNAL_STARTUP_DATA;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;SAFE_BROWSING_SERVICE;USE_KERBEROS;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=0;MOJO_USE_SYSTEM_IMPL;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;UNIT_TEST;PROTOBUF_USE_DLLS;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;BORINGSSL_SHARED_LIBRARY;V8_SHARED;USING_V8_SHARED;USE_LIBPCI=1;USE_OPENSSL=1;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cert\internal\test_helpers.h"/>
+    <ClInclude Include="cookies\cookie_store_unittest.h"/>
+    <ClInclude Include="disk_cache\simple\simple_test_util.h"/>
+    <ClInclude Include="filter\mock_filter_context.h"/>
+    <ClInclude Include="ftp\ftp_directory_listing_parser_unittest.h"/>
+    <ClInclude Include="http\http_auth_handler_mock.h"/>
+    <ClInclude Include="http\mock_allow_url_security_manager.h"/>
+    <ClInclude Include="http\mock_http_cache.h"/>
+    <ClInclude Include="http\mock_sspi_library_win.h"/>
+    <ClInclude Include="quic\congestion_control\send_algorithm_simulator.h"/>
+    <ClInclude Include="quic\test_tools\crypto_test_utils.h"/>
+    <ClInclude Include="quic\test_tools\delayed_verify_strike_register_client.h"/>
+    <ClInclude Include="quic\test_tools\mock_clock.h"/>
+    <ClInclude Include="quic\test_tools\mock_crypto_client_stream.h"/>
+    <ClInclude Include="quic\test_tools\mock_crypto_client_stream_factory.h"/>
+    <ClInclude Include="quic\test_tools\mock_quic_dispatcher.h"/>
+    <ClInclude Include="quic\test_tools\mock_random.h"/>
+    <ClInclude Include="quic\test_tools\quic_ack_notifier_manager_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_chromium_client_session_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_config_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_connection_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_data_stream_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_flow_controller_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_framer_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_packet_creator_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_packet_generator_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_received_packet_manager_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_sent_packet_manager_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_session_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_spdy_session_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_stream_sequencer_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_sustained_bandwidth_recorder_peer.h"/>
+    <ClInclude Include="quic\test_tools\quic_test_packet_maker.h"/>
+    <ClInclude Include="quic\test_tools\quic_test_utils.h"/>
+    <ClInclude Include="quic\test_tools\reliable_quic_stream_peer.h"/>
+    <ClInclude Include="quic\test_tools\rtt_stats_peer.h"/>
+    <ClInclude Include="quic\test_tools\simple_quic_framer.h"/>
+    <ClInclude Include="quic\test_tools\test_task_runner.h"/>
+    <ClInclude Include="socket\mock_client_socket_pool_manager.h"/>
+    <ClInclude Include="socket\transport_client_socket_pool_test_util.h"/>
+    <ClInclude Include="spdy\mock_spdy_framer_visitor.h"/>
+    <ClInclude Include="spdy\spdy_session_test_util.h"/>
+    <ClInclude Include="spdy\spdy_stream_test_util.h"/>
+    <ClInclude Include="spdy\spdy_test_util_common.h"/>
+    <ClInclude Include="spdy\spdy_test_utils.h"/>
+    <ClInclude Include="ssl\client_cert_store_unittest-inl.h"/>
+    <ClInclude Include="test\embedded_test_server\tcp_listen_socket_unittest.h"/>
+    <ClInclude Include="test\gtest_util.h"/>
+    <ClInclude Include="test\scoped_disable_exit_on_dfatal.h"/>
+    <ClInclude Include="test\test_certificate_data.h"/>
+    <ClInclude Include="url_request\url_request_throttler_test_support.h"/>
+    <ClInclude Include="websockets\websocket_stream_create_test_base.h"/>
+    <ClInclude Include="websockets\websocket_test_util.h"/>
+    <ClInclude Include="android\dummy_spnego_authenticator.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="http\mock_gssapi_library_posix.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="base\address_list_unittest.cc"/>
+    <ClCompile Include="base\backoff_entry_serializer_unittest.cc"/>
+    <ClCompile Include="base\backoff_entry_unittest.cc"/>
+    <ClCompile Include="base\chunked_upload_data_stream_unittest.cc"/>
+    <ClCompile Include="base\data_url_unittest.cc"/>
+    <ClCompile Include="base\directory_lister_unittest.cc"/>
+    <ClCompile Include="base\dns_util_unittest.cc"/>
+    <ClCompile Include="base\elements_upload_data_stream_unittest.cc"/>
+    <ClCompile Include="base\escape_unittest.cc"/>
+    <ClCompile Include="base\expiring_cache_unittest.cc"/>
+    <ClCompile Include="base\file_stream_unittest.cc"/>
+    <ClCompile Include="base\filename_util_unittest.cc"/>
+    <ClCompile Include="base\host_mapping_rules_unittest.cc"/>
+    <ClCompile Include="base\host_port_pair_unittest.cc"/>
+    <ClCompile Include="base\int128_unittest.cc"/>
+    <ClCompile Include="base\ip_address_number_unittest.cc"/>
+    <ClCompile Include="base\ip_endpoint_unittest.cc"/>
+    <ClCompile Include="base\ip_pattern_unittest.cc"/>
+    <ClCompile Include="base\keygen_handler_unittest.cc"/>
+    <ClCompile Include="base\layered_network_delegate_unittest.cc"/>
+    <ClCompile Include="base\mime_sniffer_unittest.cc"/>
+    <ClCompile Include="base\mime_util_unittest.cc"/>
+    <ClCompile Include="base\net_util_icu_unittest.cc"/>
+    <ClCompile Include="base\net_util_unittest.cc"/>
+    <ClCompile Include="base\network_activity_monitor_unittest.cc"/>
+    <ClCompile Include="base\network_change_notifier_unittest.cc"/>
+    <ClCompile Include="base\network_change_notifier_win_unittest.cc"/>
+    <ClCompile Include="base\network_interfaces_unittest.cc"/>
+    <ClCompile Include="base\network_quality_estimator_unittest.cc"/>
+    <ClCompile Include="base\port_util_unittest.cc"/>
+    <ClCompile Include="base\prioritized_dispatcher_unittest.cc"/>
+    <ClCompile Include="base\priority_queue_unittest.cc"/>
+    <ClCompile Include="base\registry_controlled_domains\registry_controlled_domain_unittest.cc"/>
+    <ClCompile Include="base\sdch_dictionary_unittest.cc"/>
+    <ClCompile Include="base\sdch_manager_unittest.cc"/>
+    <ClCompile Include="base\static_cookie_policy_unittest.cc"/>
+    <ClCompile Include="base\test_completion_callback_unittest.cc"/>
+    <ClCompile Include="base\upload_bytes_element_reader_unittest.cc"/>
+    <ClCompile Include="base\upload_disk_cache_entry_element_reader_unittest.cc"/>
+    <ClCompile Include="base\upload_file_element_reader_unittest.cc"/>
+    <ClCompile Include="base\url_util_unittest.cc"/>
+    <ClCompile Include="cert\cert_policy_enforcer_unittest.cc"/>
+    <ClCompile Include="cert\cert_verify_proc_unittest.cc"/>
+    <ClCompile Include="cert\cert_verify_proc_whitelist_unittest.cc"/>
+    <ClCompile Include="cert\crl_set_unittest.cc"/>
+    <ClCompile Include="cert\ct_log_response_parser_unittest.cc"/>
+    <ClCompile Include="cert\ct_log_verifier_unittest.cc"/>
+    <ClCompile Include="cert\ct_objects_extractor_unittest.cc"/>
+    <ClCompile Include="cert\ct_serialization_unittest.cc"/>
+    <ClCompile Include="cert\ev_root_ca_metadata_unittest.cc"/>
+    <ClCompile Include="cert\internal\extended_key_usage_unittest.cc"/>
+    <ClCompile Include="cert\internal\parse_certificate_unittest.cc"/>
+    <ClCompile Include="cert\internal\signature_algorithm_unittest.cc"/>
+    <ClCompile Include="cert\internal\test_helpers.cc"/>
+    <ClCompile Include="cert\internal\verify_name_match_unittest.cc"/>
+    <ClCompile Include="cert\internal\verify_signed_data_unittest.cc"/>
+    <ClCompile Include="cert\jwk_serializer_unittest.cc"/>
+    <ClCompile Include="cert\multi_log_ct_verifier_unittest.cc"/>
+    <ClCompile Include="cert\multi_threaded_cert_verifier_unittest.cc"/>
+    <ClCompile Include="cert\pem_tokenizer_unittest.cc"/>
+    <ClCompile Include="cert\sha256_legacy_support_win_unittest.cc"/>
+    <ClCompile Include="cert\signed_certificate_timestamp_unittest.cc"/>
+    <ClCompile Include="cert\test_root_certs_unittest.cc"/>
+    <ClCompile Include="cert\x509_cert_types_unittest.cc"/>
+    <ClCompile Include="cert\x509_certificate_unittest.cc"/>
+    <ClCompile Include="cert\x509_util_openssl_unittest.cc"/>
+    <ClCompile Include="cert\x509_util_unittest.cc"/>
+    <ClCompile Include="cert_net\cert_net_fetcher_impl_unittest.cc"/>
+    <ClCompile Include="cookies\canonical_cookie_unittest.cc"/>
+    <ClCompile Include="cookies\cookie_constants_unittest.cc"/>
+    <ClCompile Include="cookies\cookie_monster_unittest.cc"/>
+    <ClCompile Include="cookies\cookie_util_unittest.cc"/>
+    <ClCompile Include="cookies\parsed_cookie_unittest.cc"/>
+    <ClCompile Include="der\input_unittest.cc"/>
+    <ClCompile Include="der\parser_unittest.cc"/>
+    <ClCompile Include="der\parse_values_unittest.cc"/>
+    <ClCompile Include="disk_cache\backend_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\addr_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\bitmap_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\block_bitmaps_v3_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\block_files_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\index_table_v3_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\mapped_file_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\stats_unittest.cc"/>
+    <ClCompile Include="disk_cache\blockfile\storage_block_unittest.cc"/>
+    <ClCompile Include="disk_cache\cache_util_unittest.cc"/>
+    <ClCompile Include="disk_cache\entry_unittest.cc"/>
+    <ClCompile Include="disk_cache\simple\simple_index_file_unittest.cc"/>
+    <ClCompile Include="disk_cache\simple\simple_index_unittest.cc"/>
+    <ClCompile Include="disk_cache\simple\simple_test_util.cc"/>
+    <ClCompile Include="disk_cache\simple\simple_util_unittest.cc"/>
+    <ClCompile Include="disk_cache\simple\simple_version_upgrade_unittest.cc"/>
+    <ClCompile Include="dns\address_sorter_unittest.cc"/>
+    <ClCompile Include="dns\dns_config_service_unittest.cc"/>
+    <ClCompile Include="dns\dns_config_service_win_unittest.cc"/>
+    <ClCompile Include="dns\dns_hosts_unittest.cc"/>
+    <ClCompile Include="dns\dns_query_unittest.cc"/>
+    <ClCompile Include="dns\dns_response_unittest.cc"/>
+    <ClCompile Include="dns\dns_session_unittest.cc"/>
+    <ClCompile Include="dns\dns_transaction_unittest.cc"/>
+    <ClCompile Include="dns\host_cache_unittest.cc"/>
+    <ClCompile Include="dns\host_resolver_impl_unittest.cc"/>
+    <ClCompile Include="dns\host_resolver_mojo_unittest.cc"/>
+    <ClCompile Include="dns\mapped_host_resolver_unittest.cc"/>
+    <ClCompile Include="dns\mdns_cache_unittest.cc"/>
+    <ClCompile Include="dns\mdns_client_unittest.cc"/>
+    <ClCompile Include="dns\mojo_host_resolver_impl_unittest.cc"/>
+    <ClCompile Include="dns\record_parsed_unittest.cc"/>
+    <ClCompile Include="dns\record_rdata_unittest.cc"/>
+    <ClCompile Include="dns\serial_worker_unittest.cc"/>
+    <ClCompile Include="dns\single_request_host_resolver_unittest.cc"/>
+    <ClCompile Include="extras\sqlite\sqlite_channel_id_store_unittest.cc"/>
+    <ClCompile Include="extras\sqlite\sqlite_persistent_cookie_store_unittest.cc"/>
+    <ClCompile Include="filter\filter_unittest.cc"/>
+    <ClCompile Include="filter\gzip_filter_unittest.cc"/>
+    <ClCompile Include="filter\mock_filter_context.cc"/>
+    <ClCompile Include="filter\sdch_filter_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_auth_cache_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_ctrl_response_buffer_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_directory_listing_parser_ls_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_directory_listing_parser_netware_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_directory_listing_parser_os2_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_directory_listing_parser_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_directory_listing_parser_vms_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_directory_listing_parser_windows_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_network_transaction_unittest.cc"/>
+    <ClCompile Include="ftp\ftp_util_unittest.cc"/>
+    <ClCompile Include="http\des_unittest.cc"/>
+    <ClCompile Include="http\disk_based_cert_cache_unittest.cc"/>
+    <ClCompile Include="http\disk_cache_based_quic_server_info_unittest.cc"/>
+    <ClCompile Include="http\http_auth_cache_unittest.cc"/>
+    <ClCompile Include="http\http_auth_challenge_tokenizer_unittest.cc"/>
+    <ClCompile Include="http\http_auth_controller_unittest.cc"/>
+    <ClCompile Include="http\http_auth_filter_unittest.cc"/>
+    <ClCompile Include="http\http_auth_handler_basic_unittest.cc"/>
+    <ClCompile Include="http\http_auth_handler_digest_unittest.cc"/>
+    <ClCompile Include="http\http_auth_handler_factory_unittest.cc"/>
+    <ClCompile Include="http\http_auth_handler_mock.cc"/>
+    <ClCompile Include="http\http_auth_handler_negotiate_unittest.cc"/>
+    <ClCompile Include="http\http_auth_handler_unittest.cc"/>
+    <ClCompile Include="http\http_auth_multi_round_parse_unittest.cc"/>
+    <ClCompile Include="http\http_auth_sspi_win_unittest.cc"/>
+    <ClCompile Include="http\http_auth_unittest.cc"/>
+    <ClCompile Include="http\http_basic_state_unittest.cc"/>
+    <ClCompile Include="http\http_byte_range_unittest.cc"/>
+    <ClCompile Include="http\http_cache_unittest.cc"/>
+    <ClCompile Include="http\http_chunked_decoder_unittest.cc"/>
+    <ClCompile Include="http\http_content_disposition_unittest.cc"/>
+    <ClCompile Include="http\http_log_util_unittest.cc"/>
+    <ClCompile Include="http\http_network_layer_unittest.cc"/>
+    <ClCompile Include="http\http_network_transaction_ssl_unittest.cc"/>
+    <ClCompile Include="http\http_network_transaction_unittest.cc"/>
+    <ClCompile Include="http\http_proxy_client_socket_pool_unittest.cc"/>
+    <ClCompile Include="http\http_request_headers_unittest.cc"/>
+    <ClCompile Include="http\http_response_body_drainer_unittest.cc"/>
+    <ClCompile Include="http\http_response_headers_unittest.cc"/>
+    <ClCompile Include="http\http_response_info_unittest.cc"/>
+    <ClCompile Include="http\http_security_headers_unittest.cc"/>
+    <ClCompile Include="http\http_server_properties_impl_unittest.cc"/>
+    <ClCompile Include="http\http_server_properties_manager_unittest.cc"/>
+    <ClCompile Include="http\http_status_code_unittest.cc"/>
+    <ClCompile Include="http\http_stream_factory_impl_request_unittest.cc"/>
+    <ClCompile Include="http\http_stream_factory_impl_unittest.cc"/>
+    <ClCompile Include="http\http_status_line_validator_unittest.cc"/>
+    <ClCompile Include="http\http_stream_parser_unittest.cc"/>
+    <ClCompile Include="http\http_util_unittest.cc"/>
+    <ClCompile Include="http\http_vary_data_unittest.cc"/>
+    <ClCompile Include="http\mock_allow_url_security_manager.cc"/>
+    <ClCompile Include="http\mock_http_cache.cc"/>
+    <ClCompile Include="http\mock_sspi_library_win.cc"/>
+    <ClCompile Include="http\transport_security_persister_unittest.cc"/>
+    <ClCompile Include="http\transport_security_state_unittest.cc"/>
+    <ClCompile Include="http\url_security_manager_unittest.cc"/>
+    <ClCompile Include="log\net_log_capture_mode_unittest.cc"/>
+    <ClCompile Include="log\net_log_unittest.cc"/>
+    <ClCompile Include="log\net_log_util_unittest.cc"/>
+    <ClCompile Include="log\trace_net_log_observer_unittest.cc"/>
+    <ClCompile Include="log\write_to_file_net_log_observer_unittest.cc"/>
+    <ClCompile Include="proxy\dhcp_proxy_script_adapter_fetcher_win_unittest.cc"/>
+    <ClCompile Include="proxy\dhcp_proxy_script_fetcher_factory_unittest.cc"/>
+    <ClCompile Include="proxy\dhcp_proxy_script_fetcher_win_unittest.cc"/>
+    <ClCompile Include="proxy\mojo_proxy_resolver_factory_impl_unittest.cc"/>
+    <ClCompile Include="proxy\mojo_proxy_resolver_impl_unittest.cc"/>
+    <ClCompile Include="proxy\mojo_proxy_resolver_v8_tracing_bindings_unittest.cc"/>
+    <ClCompile Include="proxy\multi_threaded_proxy_resolver_unittest.cc"/>
+    <ClCompile Include="proxy\network_delegate_error_observer_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_bypass_rules_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_config_service_win_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_config_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_info_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_list_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_resolver_factory_mojo_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_resolver_v8_tracing_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_resolver_v8_tracing_wrapper_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_resolver_v8_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_script_decider_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_script_fetcher_impl_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_server_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_service_mojo_unittest.cc"/>
+    <ClCompile Include="proxy\proxy_service_unittest.cc"/>
+    <ClCompile Include="quic\congestion_control\cubic_bytes_test.cc"/>
+    <ClCompile Include="quic\congestion_control\cubic_test.cc"/>
+    <ClCompile Include="quic\congestion_control\hybrid_slow_start_test.cc"/>
+    <ClCompile Include="quic\congestion_control\pacing_sender_test.cc"/>
+    <ClCompile Include="quic\congestion_control\prr_sender_test.cc"/>
+    <ClCompile Include="quic\congestion_control\rtt_stats_test.cc"/>
+    <ClCompile Include="quic\congestion_control\send_algorithm_simulator.cc"/>
+    <ClCompile Include="quic\congestion_control\tcp_cubic_bytes_sender_test.cc"/>
+    <ClCompile Include="quic\congestion_control\tcp_cubic_sender_test.cc"/>
+    <ClCompile Include="quic\congestion_control\tcp_loss_algorithm_test.cc"/>
+    <ClCompile Include="quic\congestion_control\time_loss_algorithm_test.cc"/>
+    <ClCompile Include="quic\crypto\aes_128_gcm_12_decrypter_test.cc"/>
+    <ClCompile Include="quic\crypto\aes_128_gcm_12_encrypter_test.cc"/>
+    <ClCompile Include="quic\crypto\cert_compressor_test.cc"/>
+    <ClCompile Include="quic\crypto\chacha20_poly1305_decrypter_test.cc"/>
+    <ClCompile Include="quic\crypto\chacha20_poly1305_encrypter_test.cc"/>
+    <ClCompile Include="quic\crypto\channel_id_test.cc"/>
+    <ClCompile Include="quic\crypto\common_cert_set_test.cc"/>
+    <ClCompile Include="quic\crypto\crypto_framer_test.cc"/>
+    <ClCompile Include="quic\crypto\crypto_secret_boxer_test.cc"/>
+    <ClCompile Include="quic\crypto\crypto_server_test.cc"/>
+    <ClCompile Include="quic\crypto\crypto_utils_test.cc"/>
+    <ClCompile Include="quic\crypto\curve25519_key_exchange_test.cc"/>
+    <ClCompile Include="quic\crypto\local_strike_register_client_test.cc"/>
+    <ClCompile Include="quic\crypto\null_decrypter_test.cc"/>
+    <ClCompile Include="quic\crypto\null_encrypter_test.cc"/>
+    <ClCompile Include="quic\crypto\p256_key_exchange_test.cc"/>
+    <ClCompile Include="quic\crypto\proof_test.cc"/>
+    <ClCompile Include="quic\crypto\proof_verifier_chromium_test.cc"/>
+    <ClCompile Include="quic\crypto\quic_crypto_client_config_test.cc"/>
+    <ClCompile Include="quic\crypto\quic_crypto_server_config_test.cc"/>
+    <ClCompile Include="quic\crypto\quic_random_test.cc"/>
+    <ClCompile Include="quic\crypto\strike_register_test.cc"/>
+    <ClCompile Include="quic\iovector_test.cc"/>
+    <ClCompile Include="quic\network_connection_unittest.cc"/>
+    <ClCompile Include="quic\p2p\quic_p2p_session_test.cc"/>
+    <ClCompile Include="quic\port_suggester_unittest.cc"/>
+    <ClCompile Include="quic\quic_ack_notifier_manager_test.cc"/>
+    <ClCompile Include="quic\quic_ack_notifier_test.cc"/>
+    <ClCompile Include="quic\quic_address_mismatch_test.cc"/>
+    <ClCompile Include="quic\quic_alarm_test.cc"/>
+    <ClCompile Include="quic\quic_bandwidth_test.cc"/>
+    <ClCompile Include="quic\quic_chromium_client_session_test.cc"/>
+    <ClCompile Include="quic\quic_clock_test.cc"/>
+    <ClCompile Include="quic\quic_config_test.cc"/>
+    <ClCompile Include="quic\quic_connection_helper_test.cc"/>
+    <ClCompile Include="quic\quic_connection_logger_unittest.cc"/>
+    <ClCompile Include="quic\quic_connection_test.cc"/>
+    <ClCompile Include="quic\quic_crypto_client_stream_test.cc"/>
+    <ClCompile Include="quic\quic_crypto_server_stream_test.cc"/>
+    <ClCompile Include="quic\quic_crypto_stream_test.cc"/>
+    <ClCompile Include="quic\quic_data_stream_test.cc"/>
+    <ClCompile Include="quic\quic_data_writer_test.cc"/>
+    <ClCompile Include="quic\quic_fec_group_test.cc"/>
+    <ClCompile Include="quic\quic_flow_controller_test.cc"/>
+    <ClCompile Include="quic\quic_framer_test.cc"/>
+    <ClCompile Include="quic\quic_headers_stream_test.cc"/>
+    <ClCompile Include="quic\quic_http_stream_test.cc"/>
+    <ClCompile Include="quic\quic_http_utils_test.cc"/>
+    <ClCompile Include="quic\quic_network_transaction_unittest.cc"/>
+    <ClCompile Include="quic\quic_packet_creator_test.cc"/>
+    <ClCompile Include="quic\quic_packet_generator_test.cc"/>
+    <ClCompile Include="quic\quic_protocol_test.cc"/>
+    <ClCompile Include="quic\quic_received_packet_manager_test.cc"/>
+    <ClCompile Include="quic\quic_reliable_client_stream_test.cc"/>
+    <ClCompile Include="quic\quic_sent_entropy_manager_test.cc"/>
+    <ClCompile Include="quic\quic_sent_packet_manager_test.cc"/>
+    <ClCompile Include="quic\quic_server_id_test.cc"/>
+    <ClCompile Include="quic\quic_session_test.cc"/>
+    <ClCompile Include="quic\quic_socket_address_coder_test.cc"/>
+    <ClCompile Include="quic\quic_stream_factory_test.cc"/>
+    <ClCompile Include="quic\quic_stream_sequencer_test.cc"/>
+    <ClCompile Include="quic\quic_sustained_bandwidth_recorder_test.cc"/>
+    <ClCompile Include="quic\quic_time_test.cc"/>
+    <ClCompile Include="quic\quic_unacked_packet_map_test.cc"/>
+    <ClCompile Include="quic\quic_utils_chromium_test.cc"/>
+    <ClCompile Include="quic\quic_utils_test.cc"/>
+    <ClCompile Include="quic\quic_write_blocked_list_test.cc"/>
+    <ClCompile Include="quic\reliable_quic_stream_test.cc"/>
+    <ClCompile Include="quic\test_tools\crypto_test_utils.cc"/>
+    <ClCompile Include="quic\test_tools\crypto_test_utils_chromium.cc"/>
+    <ClCompile Include="quic\test_tools\crypto_test_utils_openssl.cc"/>
+    <ClCompile Include="quic\test_tools\delayed_verify_strike_register_client.cc"/>
+    <ClCompile Include="quic\test_tools\mock_clock.cc"/>
+    <ClCompile Include="quic\test_tools\mock_crypto_client_stream.cc"/>
+    <ClCompile Include="quic\test_tools\mock_crypto_client_stream_factory.cc"/>
+    <ClCompile Include="quic\test_tools\mock_quic_dispatcher.cc"/>
+    <ClCompile Include="quic\test_tools\mock_random.cc"/>
+    <ClCompile Include="quic\test_tools\quic_ack_notifier_manager_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_chromium_client_session_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_config_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_connection_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_data_stream_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_flow_controller_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_framer_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_packet_creator_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_packet_generator_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_received_packet_manager_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_sent_packet_manager_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_session_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_spdy_session_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_stream_sequencer_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_sustained_bandwidth_recorder_peer.cc"/>
+    <ClCompile Include="quic\test_tools\quic_test_packet_maker.cc"/>
+    <ClCompile Include="quic\test_tools\quic_test_utils.cc"/>
+    <ClCompile Include="quic\test_tools\reliable_quic_stream_peer.cc"/>
+    <ClCompile Include="quic\test_tools\rtt_stats_peer.cc"/>
+    <ClCompile Include="quic\test_tools\simple_quic_framer.cc"/>
+    <ClCompile Include="quic\test_tools\test_task_runner.cc"/>
+    <ClCompile Include="sdch\sdch_owner_unittest.cc"/>
+    <ClCompile Include="server\http_connection_unittest.cc"/>
+    <ClCompile Include="server\http_server_response_info_unittest.cc"/>
+    <ClCompile Include="server\http_server_unittest.cc"/>
+    <ClCompile Include="server\web_socket_encoder_unittest.cc"/>
+    <ClCompile Include="socket\client_socket_pool_base_unittest.cc"/>
+    <ClCompile Include="socket\deterministic_socket_data_unittest.cc"/>
+    <ClCompile Include="socket\mock_client_socket_pool_manager.cc"/>
+    <ClCompile Include="socket\sequenced_socket_data_unittest.cc"/>
+    <ClCompile Include="socket\socks5_client_socket_unittest.cc"/>
+    <ClCompile Include="socket\socks_client_socket_pool_unittest.cc"/>
+    <ClCompile Include="socket\socks_client_socket_unittest.cc"/>
+    <ClCompile Include="socket\ssl_client_socket_openssl_unittest.cc"/>
+    <ClCompile Include="socket\ssl_client_socket_pool_unittest.cc"/>
+    <ClCompile Include="socket\ssl_client_socket_unittest.cc"/>
+    <ClCompile Include="socket\ssl_server_socket_unittest.cc"/>
+    <ClCompile Include="socket\tcp_client_socket_unittest.cc"/>
+    <ClCompile Include="socket\tcp_server_socket_unittest.cc"/>
+    <ClCompile Include="socket\tcp_socket_unittest.cc"/>
+    <ClCompile Include="socket\transport_client_socket_pool_test_util.cc"/>
+    <ClCompile Include="socket\transport_client_socket_pool_unittest.cc"/>
+    <ClCompile Include="socket\transport_client_socket_unittest.cc"/>
+    <ClCompile Include="socket\websocket_endpoint_lock_manager_unittest.cc"/>
+    <ClCompile Include="socket\websocket_transport_client_socket_pool_unittest.cc"/>
+    <ClCompile Include="spdy\buffered_spdy_framer_unittest.cc"/>
+    <ClCompile Include="spdy\fuzzing\hpack_fuzz_util_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_decoder_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_encoder_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_entry_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_header_table_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_huffman_table_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_input_stream_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_output_stream_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_round_trip_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_static_table_test.cc"/>
+    <ClCompile Include="spdy\hpack\hpack_string_util_test.cc"/>
+    <ClCompile Include="spdy\mock_spdy_framer_visitor.cc"/>
+    <ClCompile Include="spdy\spdy_alt_svc_wire_format_test.cc"/>
+    <ClCompile Include="spdy\spdy_buffer_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_frame_builder_test.cc"/>
+    <ClCompile Include="spdy\spdy_frame_reader_test.cc"/>
+    <ClCompile Include="spdy\spdy_framer_test.cc"/>
+    <ClCompile Include="spdy\spdy_header_block_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_headers_block_parser_test.cc"/>
+    <ClCompile Include="spdy\spdy_http_stream_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_http_utils_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_network_transaction_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_pinnable_buffer_piece_test.cc"/>
+    <ClCompile Include="spdy\spdy_prefixed_buffer_reader_test.cc"/>
+    <ClCompile Include="spdy\spdy_priority_tree_test.cc"/>
+    <ClCompile Include="spdy\spdy_protocol_test.cc"/>
+    <ClCompile Include="spdy\spdy_proxy_client_socket_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_read_queue_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_session_pool_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_session_test_util.cc"/>
+    <ClCompile Include="spdy\spdy_session_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_stream_test_util.cc"/>
+    <ClCompile Include="spdy\spdy_stream_unittest.cc"/>
+    <ClCompile Include="spdy\spdy_test_util_common.cc"/>
+    <ClCompile Include="spdy\spdy_test_utils.cc"/>
+    <ClCompile Include="spdy\spdy_write_queue_unittest.cc"/>
+    <ClCompile Include="spdy\write_blocked_list_test.cc"/>
+    <ClCompile Include="ssl\channel_id_service_unittest.cc"/>
+    <ClCompile Include="ssl\client_cert_store_win_unittest.cc"/>
+    <ClCompile Include="ssl\default_channel_id_store_unittest.cc"/>
+    <ClCompile Include="ssl\ssl_cipher_suite_names_unittest.cc"/>
+    <ClCompile Include="ssl\ssl_client_auth_cache_unittest.cc"/>
+    <ClCompile Include="ssl\ssl_client_session_cache_openssl_unittest.cc"/>
+    <ClCompile Include="ssl\ssl_config_service_unittest.cc"/>
+    <ClCompile Include="ssl\ssl_config_unittest.cc"/>
+    <ClCompile Include="ssl\ssl_connection_status_flags_unittest.cc"/>
+    <ClCompile Include="test\embedded_test_server\embedded_test_server_unittest.cc"/>
+    <ClCompile Include="test\embedded_test_server\http_request_unittest.cc"/>
+    <ClCompile Include="test\embedded_test_server\http_response_unittest.cc"/>
+    <ClCompile Include="test\embedded_test_server\tcp_listen_socket_unittest.cc"/>
+    <ClCompile Include="test\python_utils_unittest.cc"/>
+    <ClCompile Include="test\run_all_unittests.cc"/>
+    <ClCompile Include="test\scoped_disable_exit_on_dfatal.cc"/>
+    <ClCompile Include="tools\balsa\balsa_frame_test.cc"/>
+    <ClCompile Include="tools\balsa\balsa_headers_test.cc"/>
+    <ClCompile Include="tools\quic\quic_simple_client_test.cc"/>
+    <ClCompile Include="tools\tld_cleanup\tld_cleanup_util_unittest.cc"/>
+    <ClCompile Include="udp\udp_socket_unittest.cc"/>
+    <ClCompile Include="url_request\certificate_report_sender_unittest.cc"/>
+    <ClCompile Include="url_request\sdch_dictionary_fetcher_unittest.cc"/>
+    <ClCompile Include="url_request\url_fetcher_impl_unittest.cc"/>
+    <ClCompile Include="url_request\url_fetcher_response_writer_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_backoff_manager_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_context_builder_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_data_job_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_file_job_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_filter_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_ftp_job_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_http_job_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_job_factory_impl_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_job_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_simple_job_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_throttler_simulation_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_throttler_test_support.cc"/>
+    <ClCompile Include="url_request\url_request_throttler_unittest.cc"/>
+    <ClCompile Include="url_request\url_request_unittest.cc"/>
+    <ClCompile Include="url_request\view_cache_helper_unittest.cc"/>
+    <ClCompile Include="websockets\websocket_basic_stream_test.cc"/>
+    <ClCompile Include="websockets\websocket_channel_test.cc"/>
+    <ClCompile Include="websockets\websocket_deflate_predictor_impl_test.cc"/>
+    <ClCompile Include="websockets\websocket_deflate_stream_test.cc"/>
+    <ClCompile Include="websockets\websocket_deflater_test.cc"/>
+    <ClCompile Include="websockets\websocket_end_to_end_test.cc"/>
+    <ClCompile Include="websockets\websocket_errors_test.cc"/>
+    <ClCompile Include="websockets\websocket_extension_parser_test.cc"/>
+    <ClCompile Include="websockets\websocket_frame_parser_test.cc"/>
+    <ClCompile Include="websockets\websocket_frame_test.cc"/>
+    <ClCompile Include="websockets\websocket_handshake_challenge_test.cc"/>
+    <ClCompile Include="websockets\websocket_handshake_stream_create_helper_test.cc"/>
+    <ClCompile Include="websockets\websocket_inflater_test.cc"/>
+    <ClCompile Include="websockets\websocket_stream_cookie_test.cc"/>
+    <ClCompile Include="websockets\websocket_stream_create_test_base.cc"/>
+    <ClCompile Include="websockets\websocket_stream_test.cc"/>
+    <ClCompile Include="websockets\websocket_test_util.cc"/>
+    <ClCompile Include="android\dummy_spnego_authenticator.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="android\http_auth_negotiate_android_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="android\keystore_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="android\network_change_notifier_android_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="base\address_tracker_linux_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="cert\nss_cert_database_chromeos_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="cert\nss_cert_database_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="cert\nss_profile_filter_chromeos_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="cert_net\nss_ocsp_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="dns\address_sorter_posix_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="dns\dns_config_service_posix_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="http\http_auth_gssapi_posix_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="http\mock_gssapi_library_posix.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="proxy\proxy_config_service_android_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="proxy\proxy_config_service_linux_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="quic\test_tools\crypto_test_utils_nss.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="socket\unix_domain_client_socket_posix_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="socket\unix_domain_server_socket_posix_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ssl\client_cert_store_mac_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ssl\client_cert_store_nss_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ssl\openssl_client_key_store_unittest.cc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir) $(ProjectName)"/>
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean $(ProjectName)"/>
+  </Target>
+</Project>

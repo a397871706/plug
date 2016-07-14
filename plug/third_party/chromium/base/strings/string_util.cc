@@ -25,7 +25,7 @@
 #include "base/strings/utf_string_conversion_utils.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/third_party/icu/icu_utf.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 namespace base {
 

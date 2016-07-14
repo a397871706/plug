@@ -2,6 +2,8 @@
 
 #include <base/basictypes.h>
 #include <base/files/file_path.h>
+#include <ipc/ipc_channel_win.h>
+#include <ipc/ipc_channel_handle.h>
 
 #include "../privilege/promote_privilege.h"
 #include "../../quirky/hook_test.h"
@@ -18,7 +20,6 @@ RemoteInject::RemoteInject()
     , dll_()
     , releaseHook_()
 {
-
 }
 
 RemoteInject::~RemoteInject()

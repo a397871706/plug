@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{F977CC92-61A1-407C-2835-A38A3BBED548}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="shell\application_instance.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\application_instance.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\application_loader.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\application_manager.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\application_manager.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\capability_filter.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\capability_filter.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\content_handler_connection.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\content_handler_connection.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\data_pipe_peek.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\data_pipe_peek.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\fetcher.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\fetcher.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\identity.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\identity.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\local_fetcher.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\local_fetcher.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\native_runner.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\network_fetcher.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\network_fetcher.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\query_util.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\query_util.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\static_application_loader.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\static_application_loader.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="shell\switches.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClCompile Include="shell\update_fetcher.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClInclude Include="shell\update_fetcher.h">
+      <Filter>shell</Filter>
+    </ClInclude>
+    <ClCompile Include="util\filename_util.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClInclude Include="util\filename_util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <None Include="mojo_shell.gyp"/>
+  </ItemGroup>
+</Project>

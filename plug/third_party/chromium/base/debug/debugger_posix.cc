@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 #include "base/debug/debugger.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #include <errno.h>
 #include <fcntl.h>

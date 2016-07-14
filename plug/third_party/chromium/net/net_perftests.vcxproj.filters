@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cookies">
+      <UniqueIdentifier>{3BB016F8-C1E9-BB16-0D08-8373C0A57C34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache">
+      <UniqueIdentifier>{5019651D-A4B6-2CA6-C769-E1358D75CDB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache\blockfile">
+      <UniqueIdentifier>{262CBFAA-5CBE-5CE7-84C0-C3D886BFDDC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{5723B9FF-62CE-DD91-C330-6F8F1184F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{8D252457-C396-7E0F-C717-915688CCBB7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{DB8B4CC8-9E72-B499-B612-B1CD65A064EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="udp">
+      <UniqueIdentifier>{211C5769-42A4-AE8C-199B-E83CAF1985A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websockets">
+      <UniqueIdentifier>{EF2312FB-6C7F-BDD7-56A4-09C85626B3B9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <ClCompile Include="base\mime_sniffer_perftest.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cookies\cookie_monster_perftest.cc">
+      <Filter>cookies</Filter>
+    </ClCompile>
+    <ClCompile Include="disk_cache\blockfile\disk_cache_perftest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </ClCompile>
+    <ClCompile Include="extras\sqlite\sqlite_persistent_cookie_store_perftest.cc">
+      <Filter>extras\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\proxy_resolver_perftest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="udp\udp_socket_perftest.cc">
+      <Filter>udp</Filter>
+    </ClCompile>
+    <ClCompile Include="websockets\websocket_frame_perftest.cc">
+      <Filter>websockets</Filter>
+    </ClCompile>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+</Project>

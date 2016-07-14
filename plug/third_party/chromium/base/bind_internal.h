@@ -11,7 +11,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/template_util.h"
 #include "base/tuple.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include "base/bind_internal_win.h"

@@ -25,7 +25,7 @@
 
 #include "base/basictypes.h"
 #include "base/strings/string16.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(COMPILER_MSVC)
 #include <unordered_map>

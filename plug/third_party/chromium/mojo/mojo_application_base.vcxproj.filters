@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{36BDA734-A600-5C03-2292-3DD4E84976F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application\public\cpp\app_lifetime_helper.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\application_connection.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\application_delegate.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\application_impl.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\application_runner.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\connect.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\interface_factory.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\interface_factory_impl.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="application\public\cpp\lib\app_lifetime_helper.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="application\public\cpp\lib\application_delegate.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="application\public\cpp\lib\application_impl.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="application\public\cpp\lib\application_runner.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClInclude Include="application\public\cpp\lib\interface_factory_connector.h">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClInclude>
+    <ClCompile Include="application\public\cpp\lib\service_connector_registry.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClInclude Include="application\public\cpp\lib\service_connector_registry.h">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClInclude>
+    <ClCompile Include="application\public\cpp\lib\service_provider_impl.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="application\public\cpp\lib\service_registry.cc">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClCompile>
+    <ClInclude Include="application\public\cpp\lib\service_registry.h">
+      <Filter>application\public\cpp\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\service_connector.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\public\cpp\service_provider_impl.h">
+      <Filter>application\public\cpp</Filter>
+    </ClInclude>
+    <None Include="mojo_base.gyp"/>
+  </ItemGroup>
+</Project>

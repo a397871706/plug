@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\quic\quic_client_base.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_client_base.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_client_session.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_client_session.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_dispatcher.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_dispatcher.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_in_memory_cache.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_in_memory_cache.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_per_connection_packet_writer.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_per_connection_packet_writer.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_server_session.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_server_session.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_simple_client.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_simple_client.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_simple_per_connection_packet_writer.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_simple_per_connection_packet_writer.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_simple_server.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_simple_server.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_simple_server_packet_writer.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_simple_server_packet_writer.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_spdy_client_stream.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_spdy_client_stream.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_spdy_server_stream.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_spdy_server_stream.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\quic_time_wait_list_manager.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\quic_time_wait_list_manager.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\synchronous_host_resolver.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\synchronous_host_resolver.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+</Project>

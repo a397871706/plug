@@ -16,7 +16,7 @@
 #endif
 #include "base/move.h"
 #include "base/threading/thread_collision_warner.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 namespace base {
 

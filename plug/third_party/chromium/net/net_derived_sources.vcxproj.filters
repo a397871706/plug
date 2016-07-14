@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{D73F75DF-23CD-654D-BE46-F759B469F227}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <None Include="base\registry_controlled_domains\effective_tld_names.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="base\registry_controlled_domains\effective_tld_names_unittest1.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="base\registry_controlled_domains\effective_tld_names_unittest2.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="base\registry_controlled_domains\effective_tld_names_unittest3.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="base\registry_controlled_domains\effective_tld_names_unittest4.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="base\registry_controlled_domains\effective_tld_names_unittest5.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="base\registry_controlled_domains\effective_tld_names_unittest6.gperf">
+      <Filter>base\registry_controlled_domains</Filter>
+    </None>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+</Project>

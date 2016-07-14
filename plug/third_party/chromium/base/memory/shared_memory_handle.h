@@ -5,7 +5,7 @@
 #ifndef BASE_MEMORY_SHARED_MEMORY_HANDLE_H_
 #define BASE_MEMORY_SHARED_MEMORY_HANDLE_H_
 
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include <windows.h>

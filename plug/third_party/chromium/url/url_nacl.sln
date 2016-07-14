@@ -1,0 +1,68 @@
+Microsoft Visual Studio Solution File, Format Version 13.00
+# Visual Studio 2013
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(icu)", "..\..\third_party\icu", "{2DE59335-96CE-10CA-CDE5-FEC35E3549BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(third_party)", "..\..\third_party", "{89C816A7-DD31-D54C-C69C-5A80E0C49B77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(url)", "..\..\url", "{ABEA8C02-AF45-C0B0-B874-B7CA283C10FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icudata_nacl", "..\third_party\icu\icudata_nacl.vcxproj", "{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icui18n_nacl", "..\third_party\icu\icui18n_nacl.vcxproj", "{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icuuc_nacl", "..\third_party\icu\icuuc_nacl.vcxproj", "{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "url_nacl", "url_nacl.vcxproj", "{3B4930DB-E87E-06FE-27B1-504CBB5A6462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|Win32 = Debug|Win32
+		Release|x64 = Release|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Debug|x64.ActiveCfg = Debug|x64
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Debug|x64.Build.0 = Debug|x64
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Debug|Win32.Build.0 = Debug|Win32
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Release|x64.ActiveCfg = Release|x64
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Release|x64.Build.0 = Release|x64
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Release|Win32.ActiveCfg = Release|Win32
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8}.Release|Win32.Build.0 = Release|Win32
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Debug|x64.ActiveCfg = Debug|x64
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Debug|x64.Build.0 = Debug|x64
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Debug|Win32.Build.0 = Debug|Win32
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Release|x64.ActiveCfg = Release|x64
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Release|x64.Build.0 = Release|x64
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Release|Win32.ActiveCfg = Release|Win32
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462}.Release|Win32.Build.0 = Release|Win32
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Debug|x64.ActiveCfg = Debug|x64
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Debug|x64.Build.0 = Debug|x64
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Debug|Win32.Build.0 = Debug|Win32
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Release|x64.ActiveCfg = Release|x64
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Release|x64.Build.0 = Release|x64
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Release|Win32.ActiveCfg = Release|Win32
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA}.Release|Win32.Build.0 = Release|Win32
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Debug|x64.ActiveCfg = Debug|x64
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Debug|x64.Build.0 = Debug|x64
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Debug|Win32.Build.0 = Debug|Win32
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Release|x64.ActiveCfg = Release|x64
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Release|x64.Build.0 = Release|x64
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Release|Win32.ActiveCfg = Release|Win32
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F967C572-3FB1-9D5E-52D2-7BEEED2D5E5C} = {2DE59335-96CE-10CA-CDE5-FEC35E3549BB}
+		{076BE6C8-D324-FB0D-2FA0-0813563E9BA8} = {2DE59335-96CE-10CA-CDE5-FEC35E3549BB}
+		{3EDA7ED7-176C-6E6F-74FB-CA48463F3FFA} = {2DE59335-96CE-10CA-CDE5-FEC35E3549BB}
+		{2DE59335-96CE-10CA-CDE5-FEC35E3549BB} = {89C816A7-DD31-D54C-C69C-5A80E0C49B77}
+		{3B4930DB-E87E-06FE-27B1-504CBB5A6462} = {ABEA8C02-AF45-C0B0-B874-B7CA283C10FB}
+	EndGlobalSection
+EndGlobal

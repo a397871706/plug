@@ -12,7 +12,7 @@
 #define BASE_SYS_BYTEORDER_H_
 
 #include "base/basictypes.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include <winsock2.h>

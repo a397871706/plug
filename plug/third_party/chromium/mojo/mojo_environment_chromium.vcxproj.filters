@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mojo\src\mojo\public\cpp\environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment">
+      <UniqueIdentifier>{B24C9A90-3EE7-0862-A2DF-850CC2042D79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\mojo\src\mojo\public\cpp\environment\async_waiter.h">
+      <Filter>..\third_party\mojo\src\mojo\public\cpp\environment</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mojo\src\mojo\public\cpp\environment\lib\async_waiter.cc">
+      <Filter>..\third_party\mojo\src\mojo\public\cpp\environment\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\mojo\src\mojo\public\cpp\environment\lib\logging.cc">
+      <Filter>..\third_party\mojo\src\mojo\public\cpp\environment\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\mojo\src\mojo\public\cpp\environment\lib\scoped_task_tracking.cc">
+      <Filter>..\third_party\mojo\src\mojo\public\cpp\environment\lib</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mojo\src\mojo\public\cpp\environment\logging.h">
+      <Filter>..\third_party\mojo\src\mojo\public\cpp\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mojo\src\mojo\public\cpp\environment\task_tracker.h">
+      <Filter>..\third_party\mojo\src\mojo\public\cpp\environment</Filter>
+    </ClInclude>
+    <ClCompile Include="environment\environment.cc">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <None Include="mojo_base.gyp"/>
+  </ItemGroup>
+</Project>

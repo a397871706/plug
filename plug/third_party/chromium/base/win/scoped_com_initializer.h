@@ -9,7 +9,7 @@
 
 #include "base/basictypes.h"
 #include "base/logging.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 namespace base {
 namespace win {

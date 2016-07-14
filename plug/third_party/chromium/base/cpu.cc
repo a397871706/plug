@@ -11,7 +11,7 @@
 
 #include "base/basictypes.h"
 #include "base/strings/string_piece.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(ARCH_CPU_ARM_FAMILY) && (defined(OS_ANDROID) || defined(OS_LINUX))
 #include "base/files/file_util.h"

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\shell">
+      <UniqueIdentifier>{E85BC352-2D2D-FF70-E8E1-C76BAA70A425}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="shell\application_manager_unittest.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClCompile Include="shell\capability_filter_unittest.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClCompile Include="shell\query_util_unittest.cc">
+      <Filter>shell</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OutDir)gen\mojo\shell\capability_filter_unittest.mojom.cc">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </ClCompile>
+    <ClInclude Include="$(OutDir)gen\mojo\shell\capability_filter_unittest.mojom.h">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </ClInclude>
+    <ClInclude Include="$(OutDir)gen\mojo\shell\capability_filter_unittest.mojom-internal.h">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </ClInclude>
+    <None Include="$(OutDir)gen\mojo\shell\capability_filter_unittest.mojom.js">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </None>
+    <None Include="$(OutDir)gen\mojo\shell\capability_filter_unittest_mojom.py">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </None>
+    <ClCompile Include="$(OutDir)gen\mojo\shell\test.mojom.cc">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </ClCompile>
+    <ClInclude Include="$(OutDir)gen\mojo\shell\test.mojom.h">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </ClInclude>
+    <ClInclude Include="$(OutDir)gen\mojo\shell\test.mojom-internal.h">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </ClInclude>
+    <None Include="$(OutDir)gen\mojo\shell\test.mojom.js">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </None>
+    <None Include="$(OutDir)gen\mojo\shell\test_mojom.py">
+      <Filter>$(OutDir)gen\mojo\shell</Filter>
+    </None>
+    <None Include="mojo_shell.gyp"/>
+  </ItemGroup>
+</Project>

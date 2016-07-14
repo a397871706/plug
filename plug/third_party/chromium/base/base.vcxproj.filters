@@ -2766,7 +2766,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="precompile.cc" />
     <ClInclude Include="async_socket_io_handler.h" />
     <ClCompile Include="async_socket_io_handler_win.cc" />
     <ClInclude Include="auto_reset.h" />
@@ -4967,9 +4966,9 @@
       <Filter>third_party\modp_b64</Filter>
     </ClCompile>
     <ClCompile Include="base_switches.cc" />
+    <ClCompile Include="..\build\precompile.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="precompile.h" />
     <ClInclude Include="build_config.h" />
     <ClInclude Include="build_config.h" />
     <ClInclude Include="build_config.h" />
@@ -4984,6 +4983,8 @@
     </ClInclude>
     <ClInclude Include="build_config.h" />
     <ClInclude Include="build_config.h" />
+    <ClInclude Include="build_config.h" />
+    <ClInclude Include="..\build\precompile.h" />
     <ClInclude Include="build_config.h" />
   </ItemGroup>
 </Project>

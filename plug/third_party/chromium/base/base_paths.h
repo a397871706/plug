@@ -8,7 +8,7 @@
 // This file declares path keys for the base module.  These can be used with
 // the PathService to access various special directories and files.
 
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include "base/base_paths_win.h"

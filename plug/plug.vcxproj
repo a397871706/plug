@@ -59,15 +59,17 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;USE_CHROMIUM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;USE_CHROMIUM;INFRA_BUILD;_USE_ATL_;_CRT_NON_CONFIGMING_SWPPINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\proj\plug\Debug\obj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\proj\plug\Debug\obj;D:\Win\plug\plug\third_party\chromium;D:\Win\plug\plug\third_party\chromium\base;D:\Win\plug\plug\third_party\chromium\third_party\wtl\include;D:\Win\plug\plug\third_party\chromium\third_party\icu\source\i18n;D:\Win\plug\plug\third_party\chromium\third_party\icu\source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>nana_d.lib;base.lib;DbgHelp.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>nana_d.lib;base.lib;DbgHelp.lib;Psapi.lib;ipc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -114,6 +116,7 @@
     <ClInclude Include="skill\hook\hook_message.h" />
     <ClInclude Include="skill\hook\hook_type.h" />
     <ClInclude Include="skill\inject\remote_inject.h" />
+    <ClInclude Include="skill\ipc\ipc_server.h" />
     <ClInclude Include="skill\privilege\promote_privilege.h" />
   </ItemGroup>
   <ItemGroup>

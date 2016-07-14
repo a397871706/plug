@@ -41,7 +41,7 @@
 #include "base/third_party/valgrind/valgrind.h"
 #include "base/threading/platform_thread.h"
 #include "base/threading/thread_restrictions.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_LINUX)
 #include <sys/prctl.h>

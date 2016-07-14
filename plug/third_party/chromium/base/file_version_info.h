@@ -5,7 +5,7 @@
 #ifndef BASE_FILE_VERSION_INFO_H_
 #define BASE_FILE_VERSION_INFO_H_
 
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include <windows.h>

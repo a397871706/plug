@@ -113,7 +113,7 @@
 #include "base/containers/hash_tables.h"
 #include "base/strings/string16.h"
 #include "base/strings/string_piece.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 // Windows-style drive letter support and pathname separator characters can be
 // enabled and disabled independently, to aid testing.  These #defines are
@@ -275,7 +275,7 @@ class BASE_EXPORT FilePath {
 
   // Adds |extension| to |file_name|. Returns the current FilePath if
   // |extension| is empty. Returns "" if BaseName() == "." or "..".
-  FilePath AddExtensmion(StringPieceType extension) const WARN_UNUSED_RESULT;
+  FilePath AddExtension(StringPieceType extension) const WARN_UNUSED_RESULT;
 
   // Replaces the extension of |file_name| with |extension|.  If |file_name|
   // does not have an extension, then |extension| is added.  If |extension| is

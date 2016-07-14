@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{5723B9FF-62CE-DD91-C330-6F8F1184F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{8D252457-C396-7E0F-C717-915688CCBB7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{5723B9FF-62CE-DD91-C330-6F8F1184F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{8D252457-C396-7E0F-C717-915688CCBB7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{5723B9FF-62CE-DD91-C330-6F8F1184F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{8D252457-C396-7E0F-C717-915688CCBB7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{5723B9FF-62CE-DD91-C330-6F8F1184F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{8D252457-C396-7E0F-C717-915688CCBB7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{5723B9FF-62CE-DD91-C330-6F8F1184F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{8D252457-C396-7E0F-C717-915688CCBB7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <ClInclude Include="extras\sqlite\cookie_crypto_delegate.h">
+      <Filter>extras\sqlite</Filter>
+    </ClInclude>
+    <ClCompile Include="extras\sqlite\sqlite_channel_id_store.cc">
+      <Filter>extras\sqlite</Filter>
+    </ClCompile>
+    <ClInclude Include="extras\sqlite\sqlite_channel_id_store.h">
+      <Filter>extras\sqlite</Filter>
+    </ClInclude>
+    <ClCompile Include="extras\sqlite\sqlite_persistent_cookie_store.cc">
+      <Filter>extras\sqlite</Filter>
+    </ClCompile>
+    <ClInclude Include="extras\sqlite\sqlite_persistent_cookie_store.h">
+      <Filter>extras\sqlite</Filter>
+    </ClInclude>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+</Project>

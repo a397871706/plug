@@ -9,7 +9,7 @@
 #include "base/basictypes.h"
 #include "base/memory/ref_counted.h"
 #include "base/observer_list_threadsafe.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 namespace base {
 

@@ -5,7 +5,7 @@
 #ifndef BASE_POSIX_GLOBAL_DESCRIPTORS_H_
 #define BASE_POSIX_GLOBAL_DESCRIPTORS_H_
 
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #include <vector>
 #include <utility>

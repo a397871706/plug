@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{565807D1-9E31-95FD-31CC-0BEDF504EDD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{565807D1-9E31-95FD-31CC-0BEDF504EDD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{565807D1-9E31-95FD-31CC-0BEDF504EDD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{565807D1-9E31-95FD-31CC-0BEDF504EDD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdch">
+      <UniqueIdentifier>{0E5BC926-D462-D097-4DFB-5FBCA818B6FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <None Include="net.gyp"/>
+    <None Include="README.md"/>
+    <None Include="docs\bug-triage.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="docs\bug-triage-labels.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="docs\bug-triage-suggested-workflow.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="docs\life-of-a-url-request.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="sdch\README.md">
+      <Filter>sdch</Filter>
+    </None>
+  </ItemGroup>
+</Project>

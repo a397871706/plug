@@ -13,7 +13,7 @@
 #include "base/base_export.h"
 #include "base/compiler_specific.h"
 #include "base/strings/string16.h"
-#include "base/build_config.h"
+#include "build/build_config.h"
 
 #if defined(OS_WIN)
 #include <windows.h>

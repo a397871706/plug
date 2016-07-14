@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services">
+      <UniqueIdentifier>{82C4CFE7-D48B-0297-09D9-A19994CF57E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services\updater">
+      <UniqueIdentifier>{825340A3-33C2-97BE-44EC-101B06067EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services">
+      <UniqueIdentifier>{82C4CFE7-D48B-0297-09D9-A19994CF57E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services\updater">
+      <UniqueIdentifier>{825340A3-33C2-97BE-44EC-101B06067EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services">
+      <UniqueIdentifier>{82C4CFE7-D48B-0297-09D9-A19994CF57E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services\updater">
+      <UniqueIdentifier>{825340A3-33C2-97BE-44EC-101B06067EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services">
+      <UniqueIdentifier>{82C4CFE7-D48B-0297-09D9-A19994CF57E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services\updater">
+      <UniqueIdentifier>{825340A3-33C2-97BE-44EC-101B06067EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen">
+      <UniqueIdentifier>{B54385DA-9AA0-82F8-3CCF-636B21B5C41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo">
+      <UniqueIdentifier>{3D6E26A0-0DAC-FBCB-0BDC-39D658C4EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services">
+      <UniqueIdentifier>{82C4CFE7-D48B-0297-09D9-A19994CF57E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)gen\mojo\services\updater">
+      <UniqueIdentifier>{825340A3-33C2-97BE-44EC-101B06067EA6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(OutDir)gen\mojo\services\updater\updater.mojom.cc">
+      <Filter>$(OutDir)gen\mojo\services\updater</Filter>
+    </ClCompile>
+    <ClInclude Include="$(OutDir)gen\mojo\services\updater\updater.mojom.h">
+      <Filter>$(OutDir)gen\mojo\services\updater</Filter>
+    </ClInclude>
+    <ClInclude Include="$(OutDir)gen\mojo\services\updater\updater.mojom-internal.h">
+      <Filter>$(OutDir)gen\mojo\services\updater</Filter>
+    </ClInclude>
+    <None Include="$(OutDir)gen\mojo\services\updater\updater.mojom.js">
+      <Filter>$(OutDir)gen\mojo\services\updater</Filter>
+    </None>
+    <None Include="$(OutDir)gen\mojo\services\updater\updater_mojom.py">
+      <Filter>$(OutDir)gen\mojo\services\updater</Filter>
+    </None>
+    <None Include="mojo_services.gyp"/>
+  </ItemGroup>
+</Project>

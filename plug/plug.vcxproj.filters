@@ -32,6 +32,9 @@
     <Filter Include="skill\inject">
       <UniqueIdentifier>{952b3e25-1a22-473b-909e-d2fa47ee3702}</UniqueIdentifier>
     </Filter>
+    <Filter Include="skill\ipc">
+      <UniqueIdentifier>{72ee0994-6de6-497e-ac36-e4036f496fed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -100,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="skill\inject\remote_inject.h">
       <Filter>skill\inject</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\ipc\ipc_server.h">
+      <Filter>skill\ipc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

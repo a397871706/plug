@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\balsa">
+      <UniqueIdentifier>{C1FD7959-A0F0-C855-4AD9-3C94CF3EDC51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{A0946190-5491-4D66-7E51-19400E36F078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{55F59CD5-0C8C-CB1B-8281-0C87C29B2125}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\build\precompile.cc">
+      <Filter>..\build</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\balsa_enums.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\balsa\balsa_frame.cc">
+      <Filter>tools\balsa</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\balsa_frame.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\balsa\balsa_headers.cc">
+      <Filter>tools\balsa</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\balsa_headers.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\balsa\balsa_headers_token_utils.cc">
+      <Filter>tools\balsa</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\balsa_headers_token_utils.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\balsa\balsa_visitor_interface.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\balsa\http_message_constants.cc">
+      <Filter>tools\balsa</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\http_message_constants.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\balsa\noop_balsa_visitor.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\balsa\simple_buffer.cc">
+      <Filter>tools\balsa</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\simple_buffer.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\balsa\split.cc">
+      <Filter>tools\balsa</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\balsa\split.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\balsa\string_piece_utils.h">
+      <Filter>tools\balsa</Filter>
+    </ClInclude>
+    <ClCompile Include="tools\quic\spdy_balsa_utils.cc">
+      <Filter>tools\quic</Filter>
+    </ClCompile>
+    <ClInclude Include="tools\quic\spdy_balsa_utils.h">
+      <Filter>tools\quic</Filter>
+    </ClInclude>
+    <None Include="net.gyp"/>
+  </ItemGroup>
+</Project>

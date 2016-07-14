@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_pump">
+      <UniqueIdentifier>{ABB0B9B1-F5ED-036A-ACDA-9793E9CD1C14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="message_pump\handle_watcher.cc">
+      <Filter>message_pump</Filter>
+    </ClCompile>
+    <ClInclude Include="message_pump\handle_watcher.h">
+      <Filter>message_pump</Filter>
+    </ClInclude>
+    <ClCompile Include="message_pump\message_pump_mojo.cc">
+      <Filter>message_pump</Filter>
+    </ClCompile>
+    <ClInclude Include="message_pump\message_pump_mojo.h">
+      <Filter>message_pump</Filter>
+    </ClInclude>
+    <ClInclude Include="message_pump\message_pump_mojo_handler.h">
+      <Filter>message_pump</Filter>
+    </ClInclude>
+    <ClCompile Include="message_pump\time_helper.cc">
+      <Filter>message_pump</Filter>
+    </ClCompile>
+    <ClInclude Include="message_pump\time_helper.h">
+      <Filter>message_pump</Filter>
+    </ClInclude>
+    <None Include="mojo_base.gyp"/>
+  </ItemGroup>
+</Project>
