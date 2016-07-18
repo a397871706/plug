@@ -19,7 +19,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -100,6 +100,7 @@
     <ClCompile Include="skill\base\app_reg.cpp" />
     <ClCompile Include="skill\hook\hook_message.cpp" />
     <ClCompile Include="skill\inject\remote_inject.cpp" />
+    <ClCompile Include="skill\ipc\ipc_listener.cpp" />
     <ClCompile Include="skill\ipc\ipc_server.cpp" />
     <ClCompile Include="skill\privilege\promote_privilege.cpp" />
     <ClCompile Include="WinMain.cpp" />

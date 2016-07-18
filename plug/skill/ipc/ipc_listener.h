@@ -11,7 +11,12 @@ class Listener;
 
 class TestIPCListener : public IPC::Listener
 {
+public:
+    TestIPCListener();
+    ~TestIPCListener();
 
+protected:
+    virtual bool OnMessageReceived(const IPC::Message& message) override;
 };
 
 #endif

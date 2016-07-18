@@ -68,6 +68,9 @@
     <ClCompile Include="skill\ipc\ipc_server.cpp">
       <Filter>skill\ipc</Filter>
     </ClCompile>
+    <ClCompile Include="skill\ipc\ipc_listener.cpp">
+      <Filter>skill\ipc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
