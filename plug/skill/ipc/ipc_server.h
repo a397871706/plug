@@ -7,7 +7,7 @@
 
 namespace IPC
 {
-class Channel;
+class ChannelWin;
 }
 
 namespace base
@@ -20,19 +20,21 @@ class TestIPCListener;
 class TestIPCConnent
 {
 public:
-    TestIPCConnent();
+    TestIPCConnent(TestIPCListener* listener);
     ~TestIPCConnent();
 
     bool Start();
     bool Stop();
+    void Send();
 
 private:
     void OnState();
     void OnStop();
 
-    scoped_ptr<IPC::Channel> ipc_channel_;
-    std::unique_ptr<TestIPCListener> listener_;
+    scoped_ptr<IPC::ChannelWin> ipc_channel_;
+    TestIPCListener* listener_;
     scoped_ptr<base::Thread> ipc_thread_;
+    bool connent_success_;
 };
 
 #endif

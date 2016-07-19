@@ -71,6 +71,15 @@
     <ClCompile Include="skill\ipc\ipc_listener.cpp">
       <Filter>skill\ipc</Filter>
     </ClCompile>
+    <ClCompile Include="skill\ipc\test_ipc_message.cpp">
+      <Filter>skill\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="skill\ipc\test_ipc_message_generator.cpp">
+      <Filter>skill\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="skill\ipc\ipc_server_delegate.cpp">
+      <Filter>skill\ipc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\ui\main_form.h">
@@ -114,6 +123,15 @@
       <Filter>skill\ipc</Filter>
     </ClInclude>
     <ClInclude Include="skill\ipc\ipc_listener.h">
+      <Filter>skill\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\ipc\test_ipc_message.h">
+      <Filter>skill\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\ipc\test_ipc_message_generator.h">
+      <Filter>skill\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="skill\ipc\ipc_server_delegate.h">
       <Filter>skill\ipc</Filter>
     </ClInclude>
   </ItemGroup>

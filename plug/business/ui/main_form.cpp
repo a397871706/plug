@@ -23,6 +23,7 @@
 #include "../../skill/base/app_reg.h"
 #include "../../resource.h"
 #include "./menu/tray_icon.h"
+#include "../../skill/ipc/ipc_server_delegate.h"
 
 using std::placeholders::_1;
 using std::placeholders::_2;
@@ -60,6 +61,7 @@ MainForm::MainForm()
     , trayicon_()
     , ui_message_loop_(base::MessageLoop::current())
     , hook_message_()
+    , test_ipc_delegate_()
 {
     caption(L"QQ连连看外挂");
     fgcolor(nana::color(192, 192, 192));
@@ -114,10 +116,6 @@ MainForm::MainForm()
     moust_top_->check(false);
     moust_top_->events().click.connect(std::bind(&MainForm::OnMoustTop, this, _1));
 
-    /*
-    nana::threads::pool regPool(1);
-    regPool.push(plug::SetAppReg);
-    regPool.wait_for_finished();*/
     hook_message_.Acquire();
 }
 
@@ -429,6 +427,11 @@ void MainForm::Init()
         trayicon_->AddTrayIcon();
     }
 
+    if (!test_ipc_delegate_)
+        test_ipc_delegate_.reset(new TestIPCServerDelegate(this));
+
+    test_ipc_delegate_->Start();
+
     if (ui_message_loop_)
     {
         ui_message_loop_->PostTask(FROM_HERE,
@@ -442,6 +445,18 @@ void MainForm::OnGameAlgorithm()
     if (!link_game_)
         link_game_.reset(new plug::LinkGameEraser(
             std::bind(&MainForm::ClickTwoPoint, this, _1, _2)));
+}
+
+void MainForm::TestOnStart()
+{
+    if (!auto_start_->checked())
+        auto_start_->check(true);
+}
+
+void MainForm::TestOnStop()
+{
+    if (auto_start_->checked())
+        auto_start_->check(false);
 }
 
 MainFormDelegate* MainFormDelegate::delegate_ = nullptr;

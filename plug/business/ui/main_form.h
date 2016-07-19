@@ -38,6 +38,7 @@ class MessageLoop;
 
 class MainForm;
 class TrayIcon;
+class TestIPCServerDelegate;
 
 class MainFormDelegate : public MessageListening
 {
@@ -73,6 +74,9 @@ public:
     void ForegroundHwnd();
 
     void Init();
+
+    void TestOnStart();
+    void TestOnStop();
 
 protected:
     void wait_for_this();
@@ -116,6 +120,7 @@ private:
     std::unique_ptr<nana::tooltip> tip_;
     std::unique_ptr<nana::threads::pool> pool_;
     std::unique_ptr<TrayIcon> trayicon_;
+    std::unique_ptr<TestIPCServerDelegate> test_ipc_delegate_;
     POINT current_pt_;
     base::MessageLoop* ui_message_loop_;
     HookMessage hook_message_;

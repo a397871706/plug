@@ -102,6 +102,9 @@
     <ClCompile Include="skill\inject\remote_inject.cpp" />
     <ClCompile Include="skill\ipc\ipc_listener.cpp" />
     <ClCompile Include="skill\ipc\ipc_server.cpp" />
+    <ClCompile Include="skill\ipc\ipc_server_delegate.cpp" />
+    <ClCompile Include="skill\ipc\test_ipc_message.cpp" />
+    <ClCompile Include="skill\ipc\test_ipc_message_generator.cpp" />
     <ClCompile Include="skill\privilege\promote_privilege.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
@@ -120,6 +123,9 @@
     <ClInclude Include="skill\inject\remote_inject.h" />
     <ClInclude Include="skill\ipc\ipc_listener.h" />
     <ClInclude Include="skill\ipc\ipc_server.h" />
+    <ClInclude Include="skill\ipc\ipc_server_delegate.h" />
+    <ClInclude Include="skill\ipc\test_ipc_message.h" />
+    <ClInclude Include="skill\ipc\test_ipc_message_generator.h" />
     <ClInclude Include="skill\privilege\promote_privilege.h" />
   </ItemGroup>
   <ItemGroup>

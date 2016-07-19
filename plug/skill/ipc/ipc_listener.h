@@ -8,15 +8,30 @@ namespace IPC
 class Listener;
 }
 
+class TestIPCServerDelegate;
 
 class TestIPCListener : public IPC::Listener
 {
 public:
-    TestIPCListener();
+    class Delegate
+    {
+    public:
+        virtual ~Delegate() { }
+        virtual void OnStart() = 0;
+        virtual void OnStop() = 0;
+    };
+
+    TestIPCListener(Delegate * delegate);
     ~TestIPCListener();
 
 protected:
     virtual bool OnMessageReceived(const IPC::Message& message) override;
+
+private:
+    void OnStart();
+    void OnStop();
+
+    Delegate* delegate_;
 };
 
 #endif
